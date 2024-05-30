@@ -4,6 +4,7 @@
 }: {
 
   # defaults I dont understand:
+  # ==================== DONT TOUCH ========================
   nixpkgs.hostPlatform = "aarch64-darwin";
   nixpkgs.config.allowUnfree = true;
   # backwards compat; don't change
@@ -14,6 +15,8 @@
     home = "/Users/ethan";
     shell = pkgs.zsh;
   };
+
+  # ============== OK YOU CAN CHANGE =====================
 
   # here go the darwin preferences and config items
   programs.zsh.enable = true;
@@ -30,13 +33,32 @@
   # system.keyboard.enableKeyMapping = true;
   # system.keyboard.remapCapsLockToEscape = true;
   fonts.fontDir.enable = false;
-  fonts.fonts = [ (pkgs.nerdfonts.override { fonts = [ "Meslo" ]; }) ];
+  fonts.fonts = [ (pkgs.nerdfonts.override { fonts = [ "Meslo" "IntelOneMono" "FiraCode" "JetBrainsMono" ]; }) ];
+
+  # =================== MAIN STUFF HERE ====================
+
   system.defaults = {
-    finder.AppleShowAllExtensions = true;
-    finder._FXShowPosixPathInTitle = true;
-    dock.autohide = true;
-    NSGlobalDomain.AppleShowAllExtensions = true;
-    NSGlobalDomain.InitialKeyRepeat = 14;
-    NSGlobalDomain.KeyRepeat = 1;
+    finder = {
+      AppleShowAllExtensions = true;
+      _FXShowPosixPathInTitle = true;
+    };
+    dock = {
+      autohide = false;
+      orientation = "left";
+      show-recents = false;
+      persistent-apps = [
+        "/System/Applications/Messages.app"
+        "/Applications/Visual Studio Code.app"
+        "/Applications/Arc.app"
+        "/Applications/Discord.app"
+        "/System/Applications/System Settings.app"
+      ];
+
+    };
+    NSGlobalDomain = {
+      AppleShowAllExtensions = true;
+      InitialKeyRepeat = 1;
+      KeyRepeat = 1;
+    };
   };
 }
