@@ -2,6 +2,8 @@
 
   imports = [
     ../nvim
+    ../git.nix
+    # ../zsh.nix  
   ];
 
   home = {
@@ -32,11 +34,6 @@
   };
 
   programs = {
-    git = {
-      enable = true;
-      userName = "Ethan Niser";
-      userEmail = "ethan@niser.com";
-    };
     zsh = {
       enable = true;
       enableCompletion = true;
