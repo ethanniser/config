@@ -9,6 +9,7 @@
     less
     neovim
     rectangle
+    gh
   ];
   home.sessionVariables = {
     PAGER = "less";
