@@ -60,7 +60,7 @@
     NSGlobalDomain = {
       AppleShowAllExtensions = true;
       AppleShowAllFiles = true;
-      AppShowScrollBars = true;
+      AppleShowScrollBars = true;
       InitialKeyRepeat = 14;
       KeyRepeat = 6;
       NSAutomaticSpellingCorrectionEnabled = false;
