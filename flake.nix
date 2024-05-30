@@ -33,7 +33,7 @@
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
-              users.ethan.imports = [ ./modules/home-manager ./modules/nvim ];
+              users.ethan.imports = [ ./modules/home-manager ];
             };
           }
         ];
