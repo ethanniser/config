@@ -54,6 +54,7 @@
       "visual-studio-code"
       "vlc"
       "zoom"
+      "protonvpn"
 
     ];
     taps = [];
