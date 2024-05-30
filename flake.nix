@@ -28,6 +28,7 @@
         pkgs = import nixpkgs { system = "aarch64-darwin"; };
         modules = [
           ./modules/darwin
+          # ./modules/homebrew
           home-manager.darwinModules.home-manager
           {
             home-manager = {
@@ -35,6 +36,8 @@
               useUserPackages = true;
               users.ethan.imports = [ ./modules/home-manager ];
             };
+
+            system.configurationRevision = self.rev or self.dirtyRev or null;
           }
         ];
       };
