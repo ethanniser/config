@@ -40,6 +40,7 @@
   system.defaults = {
     finder = {
       AppleShowAllExtensions = true;
+      AppleShowAllFiles = true;
       _FXShowPosixPathInTitle = true;
     };
     dock = {
@@ -52,13 +53,17 @@
         "/Applications/Arc.app"
         "/Applications/Discord.app"
         "/System/Applications/System Settings.app"
+        "/System/Applications/Utilities/Terminal.app"
       ];
 
     };
     NSGlobalDomain = {
       AppleShowAllExtensions = true;
-      InitialKeyRepeat = 1;
-      KeyRepeat = 1;
+      AppleShowAllFiles = true;
+      AppShowScrollBars = true;
+      InitialKeyRepeat = 14;
+      KeyRepeat = 6;
+      NSAutomaticSpellingCorrectionEnabled = false;
     };
   };
 }
