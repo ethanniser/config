@@ -21,6 +21,7 @@
     loginShell = pkgs.zsh;
     systemPackages = with pkgs; [
     coreutils
+    nixpkgs-fmt
     ];
     systemPath = ["/opt/homebrew/bin"];
     pathsToLink = ["/Applications"];
@@ -42,7 +43,19 @@
     caskArgs.no_quarantine = true;
     global.brewfile = true;
     masApps = {};
-    casks = [];
+    casks = [
+      "arc"
+      "1password"
+      "discord"
+      "livebook"
+      "ollama"
+      "slack"
+      "steam"
+      "visual-studio-code"
+      "vlc"
+      "zoom"
+
+    ];
     taps = [];
     brews = [];
   };

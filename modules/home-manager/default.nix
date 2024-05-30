@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   # Don't change this when you change package input. Leave it alone.
   home.stateVersion = "22.11";
   # specify my home-manager configs
@@ -22,6 +22,8 @@
   programs.fzf.enableZshIntegration = true;
   programs.exa.enable = true;
   programs.git.enable = true;
+  programs.git.userName = "Ethan Niser";
+  programs.git.userEmail = "ethan@niser.com"; 
   programs.zsh.enable = true;
   programs.zsh.enableCompletion = true;
   programs.zsh.enableAutosuggestions = true;
