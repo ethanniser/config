@@ -3,6 +3,7 @@
 , self
 , ...
 }: {
+
   # defaults I dont understand:
   nixpkgs.hostPlatform = "aarch64-darwin";
   nixpkgs.config.allowUnfree = true;
@@ -38,27 +39,5 @@
     NSGlobalDomain.AppleShowAllExtensions = true;
     NSGlobalDomain.InitialKeyRepeat = 14;
     NSGlobalDomain.KeyRepeat = 1;
-  };
-  homebrew = {
-    enable = true;
-    caskArgs.no_quarantine = true;
-    global.brewfile = true;
-    masApps = { };
-    casks = [
-      "arc"
-      "1password"
-      "discord"
-      "livebook"
-      "ollama"
-      "slack"
-      "steam"
-      "visual-studio-code"
-      "vlc"
-      "zoom"
-      "protonvpn"
-
-    ];
-    taps = [ ];
-    brews = [ ];
   };
 }

@@ -18,6 +18,7 @@
       "protonvpn"
     ];
     taps = [ ];
+    # Ideally leave this empty and only use nix to manage this
     brews = [ ];
   };
 }

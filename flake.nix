@@ -28,7 +28,7 @@
         pkgs = import nixpkgs { system = "aarch64-darwin"; };
         modules = [
           ./modules/darwin
-          # ./modules/homebrew
+          ./modules/homebrew.nix
           home-manager.darwinModules.home-manager
           {
             home-manager = {
