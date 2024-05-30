@@ -3,7 +3,7 @@
   imports = [
     ../nvim
     ../git.nix
-    # ../zsh.nix  
+    ../zsh.nix
   ];
 
   home = {
