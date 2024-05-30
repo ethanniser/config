@@ -39,7 +39,6 @@
 
   system.defaults = {
     finder = {
-      AppleShowAllExtensions = true;
       AppleShowAllFiles = true;
       _FXShowPosixPathInTitle = true;
     };
@@ -58,7 +57,6 @@
 
     };
     NSGlobalDomain = {
-      AppleShowAllExtensions = true;
       AppleShowAllFiles = true;
       AppleShowScrollBars = "Always";
       InitialKeyRepeat = 14;
