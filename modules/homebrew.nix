@@ -16,6 +16,7 @@
       "vlc"
       "zoom"
       "protonvpn"
+      "microsoft-outlook"
     ];
     taps = [ ];
     # Ideally leave this empty and only use nix to manage this
