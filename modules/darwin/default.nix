@@ -44,11 +44,16 @@
     defaults = {
       finder = {
         AppleShowAllFiles = true;
-        AppleShowAllExtensions = false;
+        AppleShowAllExtensions = true;
         _FXShowPosixPathInTitle = true;
+        ShowPathbar = true;
+        ShowStatusBar = true;
       };
       dock = {
-        autohide = false;
+        showhidden = true;
+        autohide = true;
+        autohide-delay = 0.0;
+        autohide-time-modifier = 0.0;
         orientation = "left";
         show-recents = false;
         persistent-apps = [
@@ -59,15 +64,26 @@
           "/System/Applications/System Settings.app"
           "/System/Applications/Utilities/Terminal.app"
         ];
-
+        mineffect = "scale";
+        minimize-to-application = true;
+        wvous-br-corner = 4; # desktop
+        wvous-bl-corner = 3; # application windows
+        wvous-tr-corner = 12; # notification center
+        wvous-tl-corner = 2; # mission control
       };
       NSGlobalDomain = {
-        AppleShowAllFiles = true;
+        AppleShowAllFiles = false;
         AppleShowAllExtensions = false;
         AppleShowScrollBars = "Always";
         InitialKeyRepeat = 14;
         KeyRepeat = 6;
         NSAutomaticSpellingCorrectionEnabled = false;
+        NSAutomaticCapitalizationEnabled = false;
+        NSAutomaticPeriodSubstitutionEnabled = false;
+      };
+      screencapture = {
+        type = "jpg";
+
       };
     };
   };
