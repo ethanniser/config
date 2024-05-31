@@ -37,33 +37,38 @@
 
   # =================== MAIN STUFF HERE ====================
 
-  system.defaults = {
-    finder = {
-      AppleShowAllFiles = true;
-      AppleShowAllExtensions = false;
-      _FXShowPosixPathInTitle = true;
+  system = {
+    startup = {
+      chime = false;
     };
-    dock = {
-      autohide = false;
-      orientation = "left";
-      show-recents = false;
-      persistent-apps = [
-        "/System/Applications/Messages.app"
-        "/Applications/Visual Studio Code.app"
-        "/Applications/Arc.app"
-        "/Applications/Discord.app"
-        "/System/Applications/System Settings.app"
-        "/System/Applications/Utilities/Terminal.app"
-      ];
+    defaults = {
+      finder = {
+        AppleShowAllFiles = true;
+        AppleShowAllExtensions = false;
+        _FXShowPosixPathInTitle = true;
+      };
+      dock = {
+        autohide = false;
+        orientation = "left";
+        show-recents = false;
+        persistent-apps = [
+          "/System/Applications/Messages.app"
+          "/Applications/Visual Studio Code.app"
+          "/Applications/Arc.app"
+          "/Applications/Discord.app"
+          "/System/Applications/System Settings.app"
+          "/System/Applications/Utilities/Terminal.app"
+        ];
 
-    };
-    NSGlobalDomain = {
-      AppleShowAllFiles = true;
-      AppleShowAllExtensions = false;
-      AppleShowScrollBars = "Always";
-      InitialKeyRepeat = 14;
-      KeyRepeat = 6;
-      NSAutomaticSpellingCorrectionEnabled = false;
+      };
+      NSGlobalDomain = {
+        AppleShowAllFiles = true;
+        AppleShowAllExtensions = false;
+        AppleShowScrollBars = "Always";
+        InitialKeyRepeat = 14;
+        KeyRepeat = 6;
+        NSAutomaticSpellingCorrectionEnabled = false;
+      };
     };
   };
 }
