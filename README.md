@@ -4,4 +4,3 @@
  - finder preferences + toolbar
 
 ## other software I installed
- - apple creative apps suite (final cut / logic)

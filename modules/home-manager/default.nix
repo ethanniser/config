@@ -22,7 +22,7 @@
       neovim
       rectangle
       gh
-      youtube-dl
+      yt-dlp
       bun
       git
       ffmpeg
@@ -30,6 +30,12 @@
       jq
       nodejs_20
       (pkgs.elixir_1_16.override { erlang = pkgs.erlang_26; })
+      speedtest-cli
+      python3
+      ollama
+      wifi-password
+      mas
+      imagemagick
     ];
   };
 
