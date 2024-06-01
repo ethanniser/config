@@ -19,6 +19,7 @@
       "affinity-photo"
       "affinity-designer"
       "affinity-publisher"
+      "cleanmymac"
     ];
     taps = [ ];
     # CHECK NIX FIRST!
