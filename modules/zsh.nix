@@ -19,7 +19,11 @@ _: {
     shellAliases = {
       ls = "ls --color=auto -F";
       nixswitch = "darwin-rebuild switch --flake ~/.config/nix-darwin";
-      nixup = "pushd ~/.config/nix-darwin; nix flake update; nixswitch; popd";
+      nixup = ''
+        pushd ~/.config/nix-darwin
+        nix flake update
+        nixswitch; popd
+      '';
     };
 
     history = {

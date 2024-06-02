@@ -27,13 +27,22 @@
       coreutils
       nixpkgs-fmt
     ];
-    systemPath = [ "/opt/homebrew/bin" ];
+    systemPath = [ "/opt/homebrew/bin" "/Users/ethan/src/scripts" ];
     pathsToLink = [ "/Applications" ];
   };
   # system.keyboard.enableKeyMapping = true;
   # system.keyboard.remapCapsLockToEscape = true;
   fonts.fontDir.enable = false;
-  fonts.fonts = [ (pkgs.nerdfonts.override { fonts = [ "Meslo" "IntelOneMono" "FiraCode" "JetBrainsMono" ]; }) ];
+  fonts.fonts = [
+    (pkgs.nerdfonts.override {
+      fonts = [
+        "Meslo"
+        "IntelOneMono"
+        "FiraCode"
+        "JetBrainsMono"
+      ];
+    })
+  ];
 
   # =================== MAIN STUFF HERE ====================
 
@@ -83,7 +92,6 @@
       };
       screencapture = {
         type = "jpg";
-
       };
     };
   };
