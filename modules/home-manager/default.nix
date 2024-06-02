@@ -1,5 +1,4 @@
-{ pkgs, ... }: {
-
+{pkgs, ...}: {
   imports = [
     ../nvim
     ../git.nix
@@ -29,15 +28,16 @@
       htop
       jq
       nodejs_20
-      (pkgs.elixir_1_16.override { erlang = pkgs.erlang_26; })
+      (pkgs.elixir_1_16.override {erlang = pkgs.erlang_26;})
       speedtest-cli
       python3
       ollama
       wifi-password
       mas
       imagemagick
+      alejandra
     ];
   };
 
-  programs = { };
+  programs = {};
 }

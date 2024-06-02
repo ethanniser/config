@@ -4,7 +4,6 @@ _: {
     userName = "Ethan Niser";
     userEmail = "ethan@niser.com";
 
-
     delta = {
       enable = true;
       options = {

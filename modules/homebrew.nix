@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{pkgs, ...}: {
   homebrew = {
     enable = true;
     caskArgs.no_quarantine = true;
@@ -38,7 +38,7 @@
       "imageoptim"
       "hiddenbar"
     ];
-    taps = [ ];
+    taps = [];
     # CHECK NIX FIRST!
     brews = [
       "mailsy"

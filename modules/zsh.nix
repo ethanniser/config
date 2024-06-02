@@ -1,11 +1,10 @@
 _: {
   programs.zsh = {
-
     enable = true;
 
     oh-my-zsh = {
       enable = true;
-      plugins = [ "git" ];
+      plugins = ["git"];
       theme = "robbyrussell";
     };
 
@@ -18,11 +17,14 @@ _: {
     };
     shellAliases = {
       ls = "ls --color=auto -F";
-      nixswitch = "darwin-rebuild switch --flake ~/.config/nix-darwin";
+      nixswitch = ''
+        darwin-rebuild switch --flake ~/.config/nix-darwin
+      '';
       nixup = ''
         pushd ~/.config/nix-darwin
         nix flake update
-        nixswitch; popd
+        nixswitch
+        popd
       '';
     };
 
@@ -36,12 +38,12 @@ _: {
       # Do not enter command lines into the history list if they are duplicates of the previous event
       ignoreDups = true;
       # Do not enter command lines into the history list if they match any one of the given shell patterns
-      ignorePatterns = [ ];
+      ignorePatterns = [];
       # Do not enter command lines into the history list if the first character is a space
       ignoreSpace = true;
       # History file location	string
       # programs.zsh.history.path = "${pkgs.home-manager.home}/.zsh_history";
-      # Number of history lines to save	
+      # Number of history lines to save
       save = 50000;
       # Number of history lines to keep
       size = 10000;

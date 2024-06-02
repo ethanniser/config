@@ -2,7 +2,6 @@
 , user
 , ...
 }: {
-
   # defaults I dont understand:
   # ==================== DONT TOUCH ========================
   nixpkgs.hostPlatform = "aarch64-darwin";
@@ -25,7 +24,6 @@
     loginShell = pkgs.zsh;
     systemPackages = with pkgs; [
       coreutils
-      nixpkgs-fmt
     ];
     systemPath = [ "/opt/homebrew/bin" "/Users/ethan/src/scripts" ];
     pathsToLink = [ "/Applications" ];
