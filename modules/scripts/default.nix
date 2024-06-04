@@ -1,12 +1,9 @@
 {pkgs, ...}: let
-  createShellScript = scriptName:
-    pkgs.writeScriptBin scriptName (builtins.readFile ./src/${scriptName});
+  srcDir = ./src;
+  scriptNames = builtins.attrNames (builtins.readDir srcDir);
 
-  scriptNames = [
-    "nixswitch"
-    "nixup"
-    "mas-to-nix"
-  ];
+  createShellScript = scriptName:
+    pkgs.writeScriptBin scriptName (builtins.readFile "${srcDir}/${scriptName}");
 
   shellScripts = map createShellScript scriptNames;
 in {

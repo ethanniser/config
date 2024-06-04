@@ -1,2 +1,11 @@
 #!/usr/bin/env bash
-darwin-rebuild switch --flake ~/.config/nix-darwin
+set -e
+pushd ~/.config/nix-darwin
+alejandra . &>/dev/null
+git diff -U0 *.nix
+echo "NixOS Rebuilding..."
+darwin-rebuild switch --flake ~/.config/nix-darwin &>nix-switch.log || (
+ cat nix-switch.log | grep --color error && false)
+gen=$(darwin-rebuild --list-generations | grep current)
+git commit -am "$gen"
+popd
