@@ -24,8 +24,10 @@
     loginShell = pkgs.zsh;
     systemPackages = with pkgs; [
       coreutils
+      vim
+      tmux
     ];
-    systemPath = ["/opt/homebrew/bin" "/Users/ethan/src/scripts"];
+    systemPath = ["/opt/homebrew/bin"];
     pathsToLink = ["/Applications"];
   };
   # system.keyboard.enableKeyMapping = true;
@@ -49,6 +51,10 @@
       chime = false;
     };
     defaults = {
+      loginwindow = {
+        GuestEnabled = false;
+        DisableConsoleAccess = true;
+      };
       finder = {
         AppleShowAllFiles = true;
         AppleShowAllExtensions = true;

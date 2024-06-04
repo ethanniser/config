@@ -1,4 +1,3 @@
-{pkgs, ...}: {
-  # we have neovim installed systemwide hence not installed here
+_: {
   xdg.configFile."nvim".source = ./config;
 }

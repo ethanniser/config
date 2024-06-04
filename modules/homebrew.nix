@@ -1,6 +1,13 @@
 _: {
   homebrew = {
     enable = true;
+
+    onActivation = {
+      autoUpdate = true;
+      upgrade = true;
+      cleanup = "zap";
+    };
+
     caskArgs.no_quarantine = true;
     global.brewfile = true;
     masApps = {
@@ -36,10 +43,11 @@ _: {
       "raycast"
       "shottr"
       "imageoptim"
-      "hiddenbar"
       "obsidian"
       "rectangle"
       "kitty"
+      "stats"
+      "bartender"
     ];
     taps = [];
     # CHECK NIX FIRST!
