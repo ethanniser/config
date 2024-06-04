@@ -1,6 +1,6 @@
-{ pkgs
-, user
-, ...
+{
+  pkgs,
+  ...
 }: {
   # defaults I dont understand:
   # ==================== DONT TOUCH ========================
@@ -20,13 +20,13 @@
   # here go the darwin preferences and config items
   programs.zsh.enable = true;
   environment = {
-    shells = with pkgs; [ bash zsh ];
+    shells = with pkgs; [bash zsh];
     loginShell = pkgs.zsh;
     systemPackages = with pkgs; [
       coreutils
     ];
-    systemPath = [ "/opt/homebrew/bin" "/Users/ethan/src/scripts" ];
-    pathsToLink = [ "/Applications" ];
+    systemPath = ["/opt/homebrew/bin" "/Users/ethan/src/scripts"];
+    pathsToLink = ["/Applications"];
   };
   # system.keyboard.enableKeyMapping = true;
   # system.keyboard.remapCapsLockToEscape = true;

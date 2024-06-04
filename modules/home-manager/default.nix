@@ -3,6 +3,7 @@
     ../nvim
     ../git.nix
     ../zsh.nix
+    ../tmux.nix
   ];
 
   home = {
@@ -19,7 +20,6 @@
       curl
       less
       neovim
-      rectangle
       gh
       yt-dlp
       bun
@@ -37,6 +37,7 @@
       imagemagick
       alejandra
       neofetch
+      nil
     ];
   };
 
