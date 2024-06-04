@@ -14,7 +14,7 @@
     darwin.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = inputs @ {
+  outputs = {
     self,
     darwin,
     nixpkgs,

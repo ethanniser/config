@@ -1,9 +1,11 @@
 {pkgs, ...}: let
   createShellScript = scriptName:
-    pkgs.writeShellScriptBin scriptName (builtins.readFile ./src/${scriptName});
+    pkgs.writeScriptBin scriptName (builtins.readFile ./src/${scriptName});
 
   scriptNames = [
-    "foo"
+    "nixswitch"
+    "nixup"
+    "mas-to-nix"
   ];
 
   shellScripts = map createShellScript scriptNames;

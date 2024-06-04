@@ -17,15 +17,6 @@ _: {
     };
     shellAliases = {
       ls = "ls --color=auto -F";
-      nixswitch = ''
-        darwin-rebuild switch --flake ~/.config/nix-darwin
-      '';
-      nixup = ''
-        pushd ~/.config/nix-darwin
-        nix flake update
-        nixswitch
-        popd
-      '';
     };
 
     history = {
@@ -42,7 +33,7 @@ _: {
       # Do not enter command lines into the history list if the first character is a space
       ignoreSpace = true;
       # History file location	string
-      # programs.zsh.history.path = "${pkgs.home-manager.home}/.zsh_history";
+      # programs.zsh.history.path = "/Users/ethan/.zsh_history";
       # Number of history lines to save
       save = 50000;
       # Number of history lines to keep
