@@ -38,6 +38,7 @@
       alejandra
       neofetch
       nil
+      cowsay
     ];
   };
 
