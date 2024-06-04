@@ -3,7 +3,7 @@
     ../nvim
     ../git.nix
     ../zsh.nix
-    ../tmux
+    ../tmux.nix
   ];
 
   home = {

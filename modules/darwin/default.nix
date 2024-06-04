@@ -1,7 +1,8 @@
-{
-  pkgs,
-  ...
-}: {
+{pkgs, ...}: {
+  imports = [
+    ../scripts
+  ];
+
   # defaults I dont understand:
   # ==================== DONT TOUCH ========================
   nixpkgs.hostPlatform = "aarch64-darwin";

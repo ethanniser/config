@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+pushd ~/.config/nix-darwin
+nix flake update
+nixswitch
+popd
