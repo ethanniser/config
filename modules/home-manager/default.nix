@@ -36,6 +36,7 @@
       mas
       imagemagick
       alejandra
+      neofetch
     ];
   };
 
