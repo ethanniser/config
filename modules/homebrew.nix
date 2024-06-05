@@ -48,7 +48,6 @@ _: {
       "kitty"
       "stats"
       "bartender"
-      "obsidian"
     ];
     taps = [];
     # CHECK NIX FIRST!
