@@ -33,7 +33,7 @@ _: {
       # Do not enter command lines into the history list if the first character is a space
       ignoreSpace = true;
       # History file location	string
-      # programs.zsh.history.path = "/Users/ethan/.zsh_history";
+      path = "/Users/ethan/.zsh_history";
       # Number of history lines to save
       save = 50000;
       # Number of history lines to keep
