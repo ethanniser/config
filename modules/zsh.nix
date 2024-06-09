@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+_: {
   programs.zsh = {
     enable = true;
 

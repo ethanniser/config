@@ -3,8 +3,16 @@ _: {
     enable = true;
     font = {
       normal = {
-        family = "Fira Code";
-        size = 12;
+        family = "FiraCode Nerd Font";
+        style = "Regular";
+      };
+      bold = {
+        family = "FiraCode Nerd Font";
+        style = "Bold";
+      };
+      italic = {
+        family = "FiraCode Nerd Font";
+        style = "Italic";
       };
     };
   };
