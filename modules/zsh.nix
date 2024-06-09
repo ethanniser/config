@@ -2,6 +2,10 @@ _: {
   programs.zsh = {
     enable = true;
 
+    initExtra = ''
+      eval "$(starship init zsh)"
+    '';
+
     oh-my-zsh = {
       enable = true;
       plugins = ["git"];
