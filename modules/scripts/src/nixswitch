@@ -20,6 +20,7 @@ darwin-rebuild switch --flake ~/.config/nix-darwin &>nix-switch.log || (
 if ! git diff --quiet; then
   gen=$(darwin-rebuild --list-generations | grep current)
   git commit -am "$gen"
+  git push
 else
   echo "No changes to commit."
 fi
