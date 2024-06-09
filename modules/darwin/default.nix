@@ -79,7 +79,7 @@
           "/Applications/Discord.app"
           "/Applications/Slack.app"
           "/System/Applications/System Settings.app"
-          "/Applications/Kitty.app"
+          "/Applications/Nix Apps/Kitty.app"
           "/Applications/Obsidian.app"
         ];
         mineffect = "scale";
