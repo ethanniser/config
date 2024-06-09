@@ -40,6 +40,14 @@
       neofetch
       nil
       cowsay
+      (nerdfonts.override {
+        fonts = [
+          "Meslo"
+          "IntelOneMono"
+          "FiraCode"
+          "JetBrainsMono"
+        ];
+      })
     ];
   };
 

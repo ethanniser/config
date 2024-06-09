@@ -33,17 +33,19 @@
   };
   # system.keyboard.enableKeyMapping = true;
   # system.keyboard.remapCapsLockToEscape = true;
-  fonts.fontDir.enable = false;
-  fonts.fonts = [
-    (pkgs.nerdfonts.override {
-      fonts = [
-        "Meslo"
-        "IntelOneMono"
-        "FiraCode"
-        "JetBrainsMono"
-      ];
-    })
-  ];
+  fonts = {
+    fontDir.enable = false;
+    fonts = with pkgs; [
+      (nerdfonts.override {
+        fonts = [
+          "Meslo"
+          "IntelOneMono"
+          "FiraCode"
+          "JetBrainsMono"
+        ];
+      })
+    ];
+  };
 
   # =================== MAIN STUFF HERE ====================
 
