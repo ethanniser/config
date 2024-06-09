@@ -1,8 +1,9 @@
 {pkgs, ...}: {
+  home.file.".p10k.zsh".text = builtins.readFile ./p10k.zsh;
   programs.zsh = {
     enable = true;
 
-    # initExtraFirst = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+    initExtraFirst = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
 
     oh-my-zsh = {
       enable = true;

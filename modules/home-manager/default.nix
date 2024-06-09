@@ -2,7 +2,7 @@
   imports = [
     ../nvim
     ../git.nix
-    ../zsh.nix
+    ../zsh
     ../tmux.nix
   ];
 
@@ -39,7 +39,8 @@
       neofetch
       nil
       cowsay
-      # zsh-powerlevel10k
+      zsh-powerlevel10k
+      meslo-lgs-nf
     ];
   };
 
