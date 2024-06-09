@@ -1,11 +1,32 @@
-_: {
+{pkgs, ...}: {
   programs.zsh = {
     enable = true;
+
+    dotDir = ".config/zsh"; # Already prepends $HOME
+
+    # initExtraBeforeCompInit = ''
+    #   # p10k instant prompt
+    #   local P10K_INSTANT_PROMPT="${xdg.cacheHome}/p10k-instant-prompt-''${(%):-%n}.zsh"
+    #   [[ ! -r "$P10K_INSTANT_PROMPT" ]] || source "$P10K_INSTANT_PROMPT"
+    # '';
+
+    plugins = with pkgs; [
+      {
+        file = "powerlevel10k.zsh-theme";
+        name = "powerlevel10k";
+        src = "${zsh-powerlevel10k}/share/zsh-powerlevel10k";
+      }
+      {
+        file = "p10k.zsh";
+        name = "powerlevel10k-config";
+        src = ./config/.p10k.zsh; # Some directory containing your p10k.zsh file
+      }
+    ];
 
     oh-my-zsh = {
       enable = true;
       plugins = ["git"];
-      theme = "powerlevel10k/powerlevel10k";
+      theme = "robbyrussell";
     };
 
     enableCompletion = true;
