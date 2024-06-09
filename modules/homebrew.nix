@@ -47,6 +47,7 @@ _: {
       "rectangle"
       "stats"
       "bartender"
+      "alacritty"
     ];
     taps = [];
     # CHECK NIX FIRST!
