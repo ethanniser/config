@@ -45,7 +45,6 @@ _: {
       "imageoptim"
       "obsidian"
       "rectangle"
-      "kitty"
       "stats"
       "bartender"
     ];

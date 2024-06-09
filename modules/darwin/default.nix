@@ -75,6 +75,7 @@
           "/Applications/Visual Studio Code.app"
           "/Applications/Arc.app"
           "/Applications/Discord.app"
+          "/Applications/Slack.app"
           "/System/Applications/System Settings.app"
           "/System/Applications/Utilities/Terminal.app"
         ];
