@@ -3,8 +3,9 @@ _: {
     enable = true;
     shellIntegration.enableZshIntegration = true;
     settings = {
-      font_family = "FiraCode Nerd Font";
-      italic_font = "FiraCode Nerd Font Italic";
+      font_family = "MesloLGM Nerd Font";
+      italic_font = "MesloLGM Nerd Font Italic";
+      bold_font = "MesloLGM Nerd Font Bold";
     };
     extraConfig = ''
     '';
