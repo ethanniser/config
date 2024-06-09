@@ -4,11 +4,9 @@
 
     dotDir = ".config/zsh"; # Already prepends $HOME
 
-    # initExtraBeforeCompInit = ''
-    #   # p10k instant prompt
-    #   local P10K_INSTANT_PROMPT="${xdg.cacheHome}/p10k-instant-prompt-''${(%):-%n}.zsh"
-    #   [[ ! -r "$P10K_INSTANT_PROMPT" ]] || source "$P10K_INSTANT_PROMPT"
-    # '';
+    initExtraBeforeCompInit = ''
+      source $HOME/.config/zsh/.p10k.zsh
+    '';
 
     plugins = with pkgs; [
       {
