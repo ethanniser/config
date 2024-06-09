@@ -1,6 +1,8 @@
-_: {
+{pkgs, ...}: {
   programs.zsh = {
     enable = true;
+
+    # initExtraFirst = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
 
     oh-my-zsh = {
       enable = true;

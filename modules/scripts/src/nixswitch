@@ -1,5 +1,27 @@
 #!/usr/bin/env bash
 set -e
+
+pushd ~/.config/nix-darwin
+alejandra . &>/dev/null
+
+# Check for git changes
+if ! git diff --quiet; then
+  git diff -U0
+else
+  echo "No changes detected."
+fi
+
+# Always perform the rebuild
 echo "NixOS Rebuilding..."
 darwin-rebuild switch --flake ~/.config/nix-darwin &>nix-switch.log || (
- cat nix-switch.log | grep --color error && false)
+  cat nix-switch.log | grep --color error && false)
+
+# Commit changes if there were any
+if ! git diff --quiet; then
+  gen=$(darwin-rebuild --list-generations | grep current)
+  git commit -am "$gen"
+else
+  echo "No changes to commit."
+fi
+
+popd
