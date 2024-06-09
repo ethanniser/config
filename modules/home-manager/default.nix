@@ -4,6 +4,7 @@
     ../git.nix
     ../zsh.nix
     ../tmux.nix
+    ../kitty.nix
   ];
 
   home = {
