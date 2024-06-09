@@ -5,7 +5,7 @@ _: {
     oh-my-zsh = {
       enable = true;
       plugins = ["git"];
-      theme = "robbyrussell";
+      theme = "powerlevel10k/powerlevel10k";
     };
 
     enableCompletion = true;
