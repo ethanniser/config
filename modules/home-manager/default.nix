@@ -39,6 +39,7 @@
       neofetch
       nil
       cowsay
+      starship
     ];
   };
 
