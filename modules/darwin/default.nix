@@ -77,7 +77,8 @@
           "/Applications/Discord.app"
           "/Applications/Slack.app"
           "/System/Applications/System Settings.app"
-          "/System/Applications/Utilities/Terminal.app"
+          "/Applications/Kitty.app"
+          "/Applications/Obsidian.app"
         ];
         mineffect = "scale";
         minimize-to-application = true;
