@@ -48,6 +48,7 @@
           "JetBrainsMono"
         ];
       })
+      zsh-powerlevel10k
     ];
   };
 
