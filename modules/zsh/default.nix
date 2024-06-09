@@ -9,18 +9,18 @@
       source $HOME/.config/zsh/.p10k.zsh
     '';
 
-    plugins = with pkgs; [
-      {
-        file = "powerlevel10k.zsh-theme";
-        name = "powerlevel10k";
-        src = "${zsh-powerlevel10k}/share/zsh-powerlevel10k";
-      }
-      {
-        file = "p10k.zsh";
-        name = "powerlevel10k-config";
-        src = ./config/.p10k.zsh; # Some directory containing your p10k.zsh file
-      }
-    ];
+    # plugins = with pkgs; [
+    #   {
+    #     file = "powerlevel10k.zsh-theme";
+    #     name = "powerlevel10k";
+    #     src = "${zsh-powerlevel10k}/share/zsh-powerlevel10k";
+    #   }
+    #   {
+    #     file = "p10k.zsh";
+    #     name = "powerlevel10k-config";
+    #     src = ./config/.p10k.zsh; # Some directory containing your p10k.zsh file
+    #   }
+    # ];
 
     oh-my-zsh = {
       enable = true;
