@@ -1,4 +1,5 @@
 {pkgs, ...}: {
+  home.file.".config/zsh/.p10k.zsh".text = builtins.readFile ./config/.p10k.zsh;
   programs.zsh = {
     enable = true;
 
