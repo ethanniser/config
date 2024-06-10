@@ -48,6 +48,7 @@ _: {
       "stats"
       "bartender"
       "microsoft-outlook"
+      "ngrok"
     ];
     taps = [];
     # CHECK NIX FIRST!
