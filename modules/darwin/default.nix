@@ -79,7 +79,7 @@
           "/Applications/Discord.app"
           "/Applications/Slack.app"
           "/System/Applications/System Settings.app"
-          "/Applications/Nix Apps/Kitty.app"
+          "/Users/ethan/Applications/Home Manager Apps/kitty.app"
           "/Applications/Obsidian.app"
           "/Applications/Microsoft Outlook.app"
         ];
@@ -95,7 +95,7 @@
         AppleShowAllExtensions = false;
         AppleShowScrollBars = "Always";
         InitialKeyRepeat = 14;
-        KeyRepeat = 6;
+        KeyRepeat = 10;
         NSAutomaticSpellingCorrectionEnabled = false;
         NSAutomaticCapitalizationEnabled = false;
         NSAutomaticPeriodSubstitutionEnabled = false;
