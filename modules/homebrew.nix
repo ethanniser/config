@@ -47,6 +47,7 @@ _: {
       "rectangle"
       "stats"
       "bartender"
+      "microsoft-outlook"
     ];
     taps = [];
     # CHECK NIX FIRST!

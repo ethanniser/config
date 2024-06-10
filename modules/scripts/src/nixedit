@@ -9,4 +9,5 @@ darwin-rebuild switch --flake ~/.config/nix-darwin &>nix-switch.log || (
  cat nix-switch.log | grep --color error && false)
 gen=$(darwin-rebuild --list-generations | grep current)
 git commit -am "$gen"
+git push --quiet
 popd
