@@ -49,6 +49,7 @@
         ];
       })
       zsh-powerlevel10k
+      corepack_latest
     ];
   };
 
