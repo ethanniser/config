@@ -25,7 +25,9 @@
     # $ darwin-rebuild build --flake .#Ethans-MacBook-Pro
     darwinConfigurations."Ethans-MacBook-Pro" = darwin.lib.darwinSystem {
       system = "aarch64-darwin";
-      pkgs = import nixpkgs {system = "aarch64-darwin";};
+      pkgs = import nixpkgs {
+        system = "aarch64-darwin";
+      };
       modules = [
         ./modules/darwin
         ./modules/homebrew.nix

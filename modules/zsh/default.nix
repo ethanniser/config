@@ -57,17 +57,17 @@
 
     history = {
       # Expire duplicates first
-      expireDuplicatesFirst = true;
+      expireDuplicatesFirst = false;
       # Save timestamp into the history file
       extended = true;
       # If a new command line being added to the history list duplicates an older one, the older command is removed from the list (even if it is not the previous event)
-      ignoreAllDups = true;
+      ignoreAllDups = false;
       # Do not enter command lines into the history list if they are duplicates of the previous event
-      ignoreDups = true;
+      ignoreDups = false;
       # Do not enter command lines into the history list if they match any one of the given shell patterns
       ignorePatterns = [];
       # Do not enter command lines into the history list if the first character is a space
-      ignoreSpace = true;
+      ignoreSpace = false;
       # History file location	string
       path = "/Users/ethan/.zsh_history";
       # Number of history lines to save
