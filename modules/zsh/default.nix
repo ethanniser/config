@@ -36,9 +36,23 @@
       enable = true;
     };
     shellAliases = {
-      ls = "ls --color=auto -F";
-      # exa = "exa --icons --color=auto";
+      ls = "eza --oneline";
+      lsa = "eza --all --oneline";
+      lsl = "eza --long --time-style=long-iso";
+      lss = "eza --long --sort=size";
+      lsd = "eza --only-dirs --oneline";
+      lsf = "eza --only-files --oneline";
+      lsab = "eza --absolute=on --oneline";
     };
+    initExtra = ''
+      lst() {
+        if [[ -n $1 ]]; then
+          eza -R --level="$1" --tree
+        else
+          eza -R --tree
+        fi
+      }
+    '';
 
     history = {
       # Expire duplicates first
