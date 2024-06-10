@@ -81,6 +81,7 @@
           "/System/Applications/System Settings.app"
           "/Applications/Nix Apps/Kitty.app"
           "/Applications/Obsidian.app"
+          "/Applications/Microsoft Outlook.app"
         ];
         mineffect = "scale";
         minimize-to-application = true;
