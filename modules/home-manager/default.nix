@@ -59,5 +59,8 @@
       icons = true;
       git = true;
     };
+    bat = {
+      enable = true;
+    };
   };
 }
