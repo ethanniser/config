@@ -95,7 +95,7 @@
         AppleShowAllExtensions = false;
         AppleShowScrollBars = "Always";
         InitialKeyRepeat = 14;
-        KeyRepeat = 10;
+        KeyRepeat = 3;
         NSAutomaticSpellingCorrectionEnabled = false;
         NSAutomaticCapitalizationEnabled = false;
         NSAutomaticPeriodSubstitutionEnabled = false;
