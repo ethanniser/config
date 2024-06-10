@@ -49,6 +49,7 @@
         ];
       })
       zsh-powerlevel10k
+      eza
     ];
   };
 

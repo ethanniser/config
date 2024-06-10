@@ -37,6 +37,7 @@
     };
     shellAliases = {
       ls = "ls --color=auto -F";
+      # exa = "exa --icons --color=auto";
     };
 
     history = {
