@@ -51,6 +51,7 @@
       })
       zsh-powerlevel10k
       corepack_latest
+      # TODO: how to add global npm packages?
     ];
   };
 
