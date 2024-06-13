@@ -51,6 +51,10 @@
       })
       zsh-powerlevel10k
       corepack_latest
+      #     porsmo
+      ripgrep
+      gitui
+
       # TODO: how to add global npm packages?
     ];
   };
