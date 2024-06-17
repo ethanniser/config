@@ -4,3 +4,4 @@
  - finder preferences + toolbar
 
 ## other software I installed
+ - yaak
