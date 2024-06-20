@@ -54,6 +54,7 @@
       #     porsmo
       ripgrep
       gitui
+      docker_26
 
       # TODO: how to add global npm packages?
     ];
