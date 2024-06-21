@@ -49,6 +49,7 @@ _: {
       "bartender"
       "microsoft-outlook"
       "obs"
+      "docker"
     ];
     taps = [];
     # CHECK NIX FIRST!
