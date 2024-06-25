@@ -28,7 +28,7 @@
       vim
       tmux
     ];
-    systemPath = ["/opt/homebrew/bin"];
+    systemPath = ["/opt/homebrew/bin" "/Users/ethan/.npm-global/bin"];
     pathsToLink = ["/Applications"];
   };
   # system.keyboard.enableKeyMapping = true;
