@@ -15,6 +15,7 @@
       EDITOR = "nvim";
       VISUAL = "nvim";
       ENV = "/Users/ethan/.config/zsh/.zshrc";
+      NPM_CONFIG_PREFIX = "~/.npm-global";
     };
     packages = with pkgs; [
       ripgrep
