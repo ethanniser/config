@@ -2,7 +2,7 @@
 set -e
 
 pushd ~/.config/nix-darwin
-alejandra . &>/dev/null
+alejandra --quiet .
 
 # Check for git changes
 if ! git diff --quiet; then
