@@ -2,7 +2,7 @@
 set -e
 pushd ~/.config/nix-darwin
 nvim
-alejandra .
+alejandra --quiet .
 git diff -U0
 echo "NixOS Rebuilding..."
 darwin-rebuild switch --flake ~/.config/nix-darwin &>nix-switch.log || (
@@ -11,3 +11,4 @@ gen=$(darwin-rebuild --list-generations | grep current)
 git commit -am "$gen"
 git push --quiet
 popd
+
