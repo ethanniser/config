@@ -46,7 +46,7 @@
       lsab = "eza --absolute=on --oneline";
       gdmb = "git branch --merged | grep -Ev '(^\\*|main)' | xargs git branch -d";
       gbsc = "git branch --sort=-committerdate";
-      r = "source ~/.config/zsh/.zshrc";
+      rs = "source ~/.config/zsh/.zshrc";
     };
     initExtra = ''
       lst() {
