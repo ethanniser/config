@@ -2,7 +2,7 @@
 set -e
 pushd ~/.config/nix-darwin
 nvim
-alejandra . &>/dev/null
+alejandra .
 git diff -U0
 echo "NixOS Rebuilding..."
 darwin-rebuild switch --flake ~/.config/nix-darwin &>nix-switch.log || (
