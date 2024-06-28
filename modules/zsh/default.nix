@@ -45,7 +45,7 @@
       lsf = "eza --only-files --oneline";
       lsab = "eza --absolute=on --oneline";
       gdmb = "git branch --merged | grep -Ev '(^\\*|main)' | xargs git branch -d";
-      gbsc = "git branch --sort=-comitterdate";
+      gbsc = "git branch --sort=-committerdate";
     };
     initExtra = ''
       lst() {
