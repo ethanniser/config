@@ -30,7 +30,7 @@
       ffmpeg
       htop
       jq
-      nodejs_20
+      nodejs_22
       (pkgs.elixir_1_16.override {erlang = pkgs.erlang_26;})
       speedtest-cli
       python3
