@@ -33,7 +33,8 @@
       nodejs_22
       (pkgs.elixir_1_16.override {erlang = pkgs.erlang_26;})
       speedtest-cli
-      python3
+      (python312.withPackages
+        (python-pkgs: with python-pkgs; [pip ipykernel]))
       ollama
       wifi-password
       mas
