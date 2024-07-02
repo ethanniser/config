@@ -34,8 +34,8 @@
     shellAliases = {
       ls = "eza --oneline";
       lsa = "eza --all --oneline";
-      lsl = "eza --long --time-style=long-iso";
-      lsal = "eza --all --long --time-style=long-iso";
+      lsl = "eza --long --header --total-size --time-style=long-iso";
+      lsal = "eza --all --long ---header --total-size -time-style=long-iso";
       lss = "eza --long --sort=size";
       lsd = "eza --only-dirs --oneline";
       lsf = "eza --only-files --oneline";
