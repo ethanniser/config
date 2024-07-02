@@ -56,7 +56,7 @@
       ripgrep
       gitui
       docker_26
-
+      zoxide
       # TODO: how to add global npm packages?
     ];
   };

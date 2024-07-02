@@ -5,10 +5,6 @@
 
     dotDir = ".config/zsh"; # Already prepends $HOME
 
-    initExtraBeforeCompInit = ''
-      source $HOME/.config/zsh/.p10k.zsh
-    '';
-
     plugins = with pkgs; [
       {
         file = "powerlevel10k.zsh-theme";
@@ -48,6 +44,11 @@
       gbsc = "git branch --sort=-committerdate";
       reload = "source ~/.config/zsh/.zshrc";
     };
+
+    initExtraBeforeCompInit = ''
+      source $HOME/.config/zsh/.p10k.zsh
+    '';
+
     initExtra = ''
       lst() {
         if [[ -n $1 ]]; then
@@ -56,6 +57,8 @@
           eza -R --tree
         fi
       }
+
+      eval "$(zoxide init zsh)"
     '';
 
     history = {
