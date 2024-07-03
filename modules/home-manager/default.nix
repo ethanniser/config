@@ -58,6 +58,7 @@
       gitui
       docker_26
       zoxide
+      btop
       # TODO: how to add global npm packages?
     ];
   };
