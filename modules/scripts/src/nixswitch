@@ -5,8 +5,9 @@ pushd ~/.config/nix-darwin
 alejandra --quiet .
 
 # Check for git changes
-if ! git diff --quiet; then
+if ! git diff --quiet || ! git diff --quiet --cached; then
   git diff -U0
+  git diff --cached -U0
 else
   echo "No changes detected."
 fi
@@ -17,7 +18,7 @@ darwin-rebuild switch --flake ~/.config/nix-darwin &>nix-switch.log || (
   cat nix-switch.log | grep --color error && false)
 
 # Commit changes if there were any
-if ! git diff --quiet; then
+if ! git diff --quiet || ! git diff --quiet --cached; then
   gen=$(darwin-rebuild --list-generations | grep current)
   git commit -am "$gen"
   git push --quiet

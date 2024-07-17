@@ -11,6 +11,7 @@ in {
     ../zsh
     ../tmux.nix
     ../kitty.nix
+    ../karabiner
   ];
 
   home = {
