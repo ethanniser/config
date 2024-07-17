@@ -70,7 +70,7 @@
         autohide = true;
         autohide-delay = 0.0;
         autohide-time-modifier = 0.0;
-        orientation = "left";
+        orientation = "bottom";
         show-recents = false;
         persistent-apps = [
           "/System/Applications/Messages.app"
@@ -85,7 +85,7 @@
         ];
         mineffect = "scale";
         minimize-to-application = true;
-        wvous-br-corner = 4; # desktop
+        wvous-br-corner = 1; # disabled
         wvous-bl-corner = 3; # application windows
         wvous-tr-corner = 12; # notification center
         wvous-tl-corner = 2; # mission control
