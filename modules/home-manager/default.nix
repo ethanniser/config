@@ -66,8 +66,7 @@ in {
       docker_26
       zoxide
       btop
-      # rustStable
-      rustup
+      rustStable
       tig
       lazygit
       # TODO: how to add global npm packages?
