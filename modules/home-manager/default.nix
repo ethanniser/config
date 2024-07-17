@@ -46,7 +46,7 @@ in {
       mas
       imagemagick
       alejandra
-      neofetch
+      fastfetch
       nil
       cowsay
       (nerdfonts.override {
@@ -66,6 +66,8 @@ in {
       zoxide
       btop
       rustStable
+      tig
+      lazygit
       # TODO: how to add global npm packages?
     ];
   };
