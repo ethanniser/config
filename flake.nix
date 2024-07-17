@@ -12,6 +12,9 @@
     # Controls system level software and settings including fonts
     darwin.url = "github:lnl7/nix-darwin";
     darwin.inputs.nixpkgs.follows = "nixpkgs";
+
+    fenix.url = "github:nix-community/fenix";
+    fenix.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = {
@@ -19,6 +22,7 @@
     darwin,
     nixpkgs,
     home-manager,
+    fenix,
     ...
   }: {
     # Build darwin flake using:
@@ -37,6 +41,9 @@
             useGlobalPkgs = true;
             useUserPackages = true;
             users.ethan.imports = [./modules/home-manager];
+            extraSpecialArgs = {
+              fenix = fenix;
+            };
           };
 
           system.configurationRevision = self.rev or self.dirtyRev or null;

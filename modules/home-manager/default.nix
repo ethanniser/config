@@ -1,4 +1,10 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  fenix,
+  ...
+}: let
+  rustStable = fenix.packages.aarch64-darwin.stable.toolchain;
+in {
   imports = [
     ../nvim
     ../git.nix
@@ -59,6 +65,7 @@
       docker_26
       zoxide
       btop
+      rustStable
       # TODO: how to add global npm packages?
     ];
   };
