@@ -50,6 +50,7 @@ _: {
       "microsoft-outlook"
       "obs"
       "docker"
+      "karabiner-elements"
     ];
     taps = [];
     # CHECK NIX FIRST!
