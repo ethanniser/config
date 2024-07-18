@@ -51,6 +51,7 @@ _: {
       "obs"
       "docker"
       "karabiner-elements"
+      "scroll-reverser"
     ];
     taps = [];
     # CHECK NIX FIRST!
