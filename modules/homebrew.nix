@@ -57,6 +57,7 @@ _: {
     # CHECK NIX FIRST!
     brews = [
       "mailsy"
+      "openjdk"
     ];
   };
 }
