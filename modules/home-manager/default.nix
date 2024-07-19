@@ -69,7 +69,7 @@ in {
       rustStable
       tig
       lazygit
-      jdk22
+      jdk
       # TODO: how to add global npm packages?
     ];
   };
