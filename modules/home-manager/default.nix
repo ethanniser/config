@@ -69,6 +69,7 @@ in {
       rustStable
       tig
       lazygit
+      zig
       # TODO: how to add global npm packages?
     ];
   };
