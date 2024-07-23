@@ -70,6 +70,7 @@ in {
       tig
       lazygit
       zig
+      zls
       # TODO: how to add global npm packages?
     ];
   };
