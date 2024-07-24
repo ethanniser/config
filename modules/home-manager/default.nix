@@ -66,12 +66,13 @@ in {
       docker_26
       zoxide
       btop
-      # rustStable
-      rustup
+      rustStable
+      # rustup
       tig
       lazygit
       zig
       zls
+      bacon
       # TODO: how to add global npm packages?
     ];
   };
