@@ -51,5 +51,5 @@ end)
 
 -- Keybind to change blur
 vim.keymap.set({ 'n', 'v', 'o' }, '<D-;>', function()
-  vim.g.neovide_window_blurred = !vim.g.neovide_window_blurred
+  vim.g.neovide_window_blurred = not vim.g.neovide_window_blurred
 end)
