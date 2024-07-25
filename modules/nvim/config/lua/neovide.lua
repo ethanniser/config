@@ -25,31 +25,23 @@ vim.keymap.set('n', '<C-->', function()
   change_scale_factor(1 / 1.25)
 end)
 
--- Helper function for transparency formatting
-local alpha = function()
-  return string.format('%x', math.floor((255 * vim.g.transparency) or 0.8))
-end
-
-local bg_color = '#0f1117'
-
--- g:neovide_transparency should be 0 if you want to unify transparency of content and title bar.
-vim.g.neovide_transparency = 0.0
 vim.g.transparency = 0.8
-vim.g.neovide_background_color = bg_color .. alpha()
 
--- Add keybinds to change transparency
 local change_transparency = function(delta)
-  vim.g.neovide_transparency_point = vim.g.transparency + delta
-  vim.g.neovide_background_color = bg_color .. alpha()
+  local next_value = vim.g.transparency + delta
+  if next_value > 1.0 or next_value < 0.0 then
+    return
+  else
+    vim.g.transparency = next_value
+  end
 end
 vim.keymap.set({ 'n', 'v', 'o' }, '<D-]>', function()
-  change_transparency(0.01)
+  change_transparency(0.05)
 end)
 vim.keymap.set({ 'n', 'v', 'o' }, '<D-[>', function()
-  change_transparency(-0.01)
+  change_transparency(-0.05)
 end)
 
--- Keybind to change blur
 vim.keymap.set({ 'n', 'v', 'o' }, '<D-;>', function()
   vim.g.neovide_window_blurred = not vim.g.neovide_window_blurred
 end)
