@@ -74,6 +74,9 @@ in {
       zls
       bacon
       stylua
+      prettierd
+      nodePackages.prettier
+      wget
       # TODO: how to add global npm packages?
     ];
   };
