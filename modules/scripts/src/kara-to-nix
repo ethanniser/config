@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+pushd ~/.config/nix-darwin
+cp ~/.config/karabiner/karabiner.json ./modules/karabiner/karabiner.json
+popd
+nixswitch
