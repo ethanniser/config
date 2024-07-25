@@ -73,6 +73,7 @@ in {
       zig
       zls
       bacon
+      stylua
       # TODO: how to add global npm packages?
     ];
   };
