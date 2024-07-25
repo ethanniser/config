@@ -87,28 +87,28 @@ P.S. You can delete this when you're done too. It's your config now! :)
 -- Set <space> as the leader key
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
 
 -- [[ Neovide Configuration ]]
 if vim.g.neovide then
-	require("neovide")
+  require 'neovide'
 end
 
 -- [[ Setting options ]]
-require("options")
+require 'options'
 
 -- [[ Basic Keymaps ]]
-require("keymaps")
+require 'keymaps'
 
 -- [[ Commands ]]
-require("commands")
+require 'commands'
 
 -- [[ Install `lazy.nvim` plugin manager ]]
-require("lazy-bootstrap")
+require 'lazy-bootstrap'
 
 -- [[ Configure and install plugins ]]
-require("lazy-plugins")
+require 'lazy-plugins'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
