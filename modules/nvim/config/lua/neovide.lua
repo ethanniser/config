@@ -1,5 +1,6 @@
 -- Config
-vim.g.neovide_cursor_animation_length = 0.1
+vim.g.neovide_cursor_animation_length = 0.05
+vim.g.neovide_cursor_trail_size = 0.4
 
 -- vim.cmd 'set guifont="MesloLGS Nerd Font:h14"'
 vim.o.guifont = 'MesloLGS Nerd Font:h14'
