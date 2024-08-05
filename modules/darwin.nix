@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   imports = [
-    ../scripts
+    ./scripts
   ];
 
   # defaults I dont understand:

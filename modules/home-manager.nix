@@ -1,12 +1,12 @@
-{ pkgs, fenix, nvim, ... }: let
+{ pkgs, fenix, ... }: let
   rustStable = fenix.packages.aarch64-darwin.stable.toolchain;
 in {
   imports = [
-    ../git.nix
-    ../zsh
-    ../tmux.nix
-    ../kitty.nix
-    ../karabiner
+    ./git.nix
+    ./zsh
+    ./tmux.nix
+    ./kitty.nix
+    ./karabiner
   ];
 
   home = {

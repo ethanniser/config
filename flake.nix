@@ -38,14 +38,14 @@
         overlays = [nvim.overlays.default];
       };
       modules = [
-        ./modules/darwin
+        ./modules/darwin.nix
         ./modules/homebrew.nix
         home-manager.darwinModules.home-manager
         {
           home-manager = {
             useGlobalPkgs = true;
             useUserPackages = true;
-            users.ethan.imports = [./modules/home-manager];
+            users.ethan.imports = [./modules/home-manager.nix];
             extraSpecialArgs = {
               inherit fenix;
             };
