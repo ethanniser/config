@@ -35,7 +35,7 @@
       system = "aarch64-darwin";
       pkgs = import nixpkgs {
         system = "aarch64-darwin";
-        overlays = [nvim.overlays.default];
+        overlays = [nvim.overlays.default fenix.overlays.default];
       };
       modules = [
         ./modules/darwin.nix
@@ -46,9 +46,6 @@
             useGlobalPkgs = true;
             useUserPackages = true;
             users.ethan.imports = [./modules/home-manager.nix];
-            extraSpecialArgs = {
-              inherit fenix;
-            };
           };
 
           system.configurationRevision = self.rev or self.dirtyRev or null;

@@ -1,6 +1,4 @@
-{ pkgs, fenix, ... }: let
-  rustStable = fenix.packages.aarch64-darwin.stable.toolchain;
-in {
+{pkgs, ...}: {
   imports = [
     ./git.nix
     ./zsh
@@ -21,7 +19,22 @@ in {
     };
 
     packages = with pkgs; [
+      # FROM OVERLAYS
+
+      # nvim
       nvim-pkg
+
+      # fenix
+      (fenix.complete.withComponents [
+        "cargo"
+        "clippy"
+        "rust-src"
+        "rustc"
+        "rustfmt"
+      ])
+      rust-analyzer-nightly
+
+      # FROM NIXPKGS
       ripgrep
       fd
       curl
@@ -56,13 +69,11 @@ in {
       })
       zsh-powerlevel10k
       corepack_latest
-      porsmo
       ripgrep
       gitui
       docker_26
       zoxide
       btop
-      rustStable
       tig
       lazygit
       zig
@@ -72,6 +83,7 @@ in {
       prettierd
       nodePackages.prettier
       wget
+
       # TODO: how to add global npm packages?
     ];
   };
