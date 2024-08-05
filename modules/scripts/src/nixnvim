@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -e
+
+pushd ~/.config/nix-darwin/nvim
+stylua .
+nix run .
+popd
