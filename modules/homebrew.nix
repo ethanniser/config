@@ -10,6 +10,7 @@ _: {
 
     caskArgs.no_quarantine = true;
     global.brewfile = true;
+
     masApps = {
       "Final Cut Pro" = 424389933;
       "Keynote" = 409183694;
@@ -52,7 +53,6 @@ _: {
       "docker"
       "karabiner-elements"
       "scroll-reverser"
-      "neovide"
       "backblaze"
     ];
     taps = [];

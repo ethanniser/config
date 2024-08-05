@@ -77,7 +77,6 @@
           "/Applications/Visual Studio Code.app"
           "/Applications/Arc.app"
           "/Applications/Discord.app"
-          "/Applications/Slack.app"
           "/System/Applications/System Settings.app"
           "/Users/ethan/Applications/Home Manager Apps/kitty.app"
           "/Applications/Obsidian.app"
