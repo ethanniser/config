@@ -4,6 +4,10 @@ This is my personal nix configuration. I use it to define my system configuratio
 
 I got it started from [this video](https://www.youtube.com/watch?v=LE5JR4JcvMg&pp=ygUQbml4IGRhcndpbiBzZXR1cA%3D%3D) mostly and slowly made it my own.
 
+## Post Clone
+```sh
+git submodule update --init --recursive
+```
 
 ## Other stuff
 
