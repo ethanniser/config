@@ -6,7 +6,6 @@
   rustStable = fenix.packages.aarch64-darwin.stable.toolchain;
 in {
   imports = [
-    ../nvim
     ../git.nix
     ../zsh
     ../tmux.nix
