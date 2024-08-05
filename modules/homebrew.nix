@@ -53,6 +53,7 @@ _: {
       "karabiner-elements"
       "scroll-reverser"
       "neovide"
+      "backblaze"
     ];
     taps = [];
     # CHECK NIX FIRST!
