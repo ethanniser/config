@@ -15,6 +15,9 @@
 
     fenix.url = "github:nix-community/fenix";
     fenix.inputs.nixpkgs.follows = "nixpkgs";
+
+    # Local neovim flake
+    nvim.url = "path:./nvim";
   };
 
   outputs = {
@@ -23,6 +26,7 @@
     nixpkgs,
     home-manager,
     fenix,
+    nvim,
     ...
   }: {
     # Build darwin flake using:
@@ -31,6 +35,7 @@
       system = "aarch64-darwin";
       pkgs = import nixpkgs {
         system = "aarch64-darwin";
+        overlays = [nvim.overlays.default];
       };
       modules = [
         ./modules/darwin
@@ -42,7 +47,7 @@
             useUserPackages = true;
             users.ethan.imports = [./modules/home-manager];
             extraSpecialArgs = {
-              fenix = fenix;
+              inherit fenix;
             };
           };
 

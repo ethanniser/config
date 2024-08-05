@@ -1,8 +1,4 @@
-{
-  pkgs,
-  fenix,
-  ...
-}: let
+{ pkgs, fenix, nvim, ... }: let
   rustStable = fenix.packages.aarch64-darwin.stable.toolchain;
 in {
   imports = [
@@ -17,18 +13,19 @@ in {
     stateVersion = "22.11";
     sessionVariables = {
       PAGER = "less";
-      CLICLOLOR = 1;
+      CLICOLOR = 1;
       EDITOR = "nvim";
       VISUAL = "nvim";
       ENV = "/Users/ethan/.config/zsh/.zshrc";
       NPM_CONFIG_PREFIX = "~/.npm-global";
     };
+
     packages = with pkgs; [
+      nvim-pkg
       ripgrep
       fd
       curl
       less
-      neovim
       gh
       yt-dlp
       bun
@@ -59,14 +56,13 @@ in {
       })
       zsh-powerlevel10k
       corepack_latest
-      #     porsmo
+      porsmo
       ripgrep
       gitui
       docker_26
       zoxide
       btop
       rustStable
-      # rustup
       tig
       lazygit
       zig
