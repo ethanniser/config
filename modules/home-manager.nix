@@ -83,6 +83,7 @@
       prettierd
       nodePackages.prettier
       wget
+      just
 
       # TODO: how to add global npm packages?
     ];

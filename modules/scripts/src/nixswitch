@@ -4,10 +4,6 @@ set -e
 pushd ~/.config/nix-darwin
 alejandra --quiet .
 
-pushd ~/.config/nix-darwin/nvim
-stylua .
-popd
-
 # Check for git changes
 if ! git diff --quiet || ! git diff --quiet --cached; then
   git diff -U0
