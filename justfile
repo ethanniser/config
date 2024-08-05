@@ -9,7 +9,7 @@ format:
 
 diff:
     #!/usr/bin/env bash
-    set -euxo pipefail
+    set -euo pipefail
 
     if ! git diff --quiet || ! git diff --quiet --cached; then
         git diff -U0
@@ -20,7 +20,7 @@ diff:
 
 switch-quiet:
     #!/usr/bin/env bash
-    set -euxo pipefail
+    set -euo pipefail
 
     darwin-rebuild switch --flake . &>nix-switch.log || (
         cat nix-switch.log | grep --color error && false)
@@ -30,7 +30,7 @@ switch-loud:
 
 commit:
     #!/usr/bin/env bash
-    set -euxo pipefail
+    set -euo pipefail
 
     if ! git diff --quiet || ! git diff --quiet --cached; then
         gen=$(darwin-rebuild --list-generations | grep current)
