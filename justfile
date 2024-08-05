@@ -22,11 +22,11 @@ switch-quiet:
     #!/usr/bin/env bash
     set -euo pipefail
 
-    darwin-rebuild switch --flake . &>nix-switch.log || (
+    darwin-rebuild switch --flake '.?submodules=1' &>nix-switch.log || (
         cat nix-switch.log | grep --color error && false)
 
 switch-loud:
-    darwin-rebuild switch --flake .
+    darwin-rebuild switch --flake '.?submodules=1'
 
 commit:
     #!/usr/bin/env bash
