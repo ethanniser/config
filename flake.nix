@@ -18,6 +18,7 @@
 
     # Local neovim flake
     nvim.url = "path:./nvim";
+    nvim.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = {
