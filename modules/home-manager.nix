@@ -26,7 +26,8 @@
       # FROM OVERLAYS
 
       # nvim
-      nvim-pkg
+      configured-nvim
+      configured-nvim-deps
 
       # fenix
       (fenix.complete.withComponents [
@@ -36,7 +37,6 @@
         "rustc"
         "rustfmt"
       ])
-      rust-analyzer-nightly
 
       # FROM NIXPKGS
       ripgrep
@@ -61,7 +61,6 @@
       imagemagick
       alejandra
       fastfetch
-      nil
       cowsay
       (nerdfonts.override {
         fonts = [
@@ -81,7 +80,6 @@
       tig
       lazygit
       zig
-      zls
       bacon
       stylua
       prettierd
