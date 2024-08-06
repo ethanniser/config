@@ -16,9 +16,8 @@
     fenix.url = "github:nix-community/fenix";
     fenix.inputs.nixpkgs.follows = "nixpkgs";
 
-    # Local neovim flake
-    nvim.url = "github:ethanniser/nvim.nix";
-    nvim.inputs.nixpkgs.follows = "nixpkgs";
+    flake-utils.url = "github:numtide/flake-utils";
+    gen-luarc.url = "github:mrcjkb/nix-gen-luarc-json";
   };
 
   outputs = {
@@ -27,9 +26,17 @@
     nixpkgs,
     home-manager,
     fenix,
-    nvim,
+    flake-utils,
+    gen-luarc,
     ...
-  }: {
+  }@inputs: 
+    let 
+    nvim-flake = import ./nvim/flake.nix;
+    nvim = nvim-flake.outputs {
+      inherit self nixpkgs flake-utils gen-luarc;
+    };
+    in 
+    {
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .#Ethans-MacBook-Pro
     darwinConfigurations."Ethans-MacBook-Pro" = darwin.lib.darwinSystem {
