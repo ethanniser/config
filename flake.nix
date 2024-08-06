@@ -31,10 +31,10 @@
     fenix,
     get-flake,
     ...
-  }@inputs : let 
+  } @ inputs: let
     # Local neovim flake
-    nvim  = get-flake ./nvim;
-  in{
+    nvim = get-flake ./nvim;
+  in {
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .#Ethans-MacBook-Pro
     darwinConfigurations."Ethans-MacBook-Pro" = darwin.lib.darwinSystem {
