@@ -53,6 +53,7 @@ _: {
       "docker"
       "karabiner-elements"
       "scroll-reverser"
+      # "neovide"
       "backblaze"
     ];
     taps = [];
