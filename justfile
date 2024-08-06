@@ -1,8 +1,8 @@
 default:
-  just format
-  just diff
-  just switch-quiet
-  just commit
+    just format
+    just diff
+    just switch-quiet
+    just commit
 
 format:
     alejandra --quiet .
@@ -22,11 +22,13 @@ switch-quiet:
     #!/usr/bin/env bash
     set -euo pipefail
 
-    darwin-rebuild switch --flake '.?submodules=1' &>nix-switch.log || (
+    nix flake lock --update-input nvim
+    darwin-rebuild switch --flake . &>nix-switch.log || (
         cat nix-switch.log | grep --color error && false)
 
 switch-loud:
-    darwin-rebuild switch --flake '.?submodules=1'
+    nix flake lock --update-input nvim
+    darwin-rebuild switch --flake .
 
 commit:
     #!/usr/bin/env bash
@@ -42,3 +44,4 @@ commit:
 
 update:
     nix flake update
+

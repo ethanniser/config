@@ -19,8 +19,8 @@
     get-flake.url = "github:ursi/get-flake";
 
     # Local neovim flake
-    # nvim.url = "path:./nvim";
-    # nvim.inputs.nixpkgs.follows = "nixpkgs";
+    nvim.url = "github:ethanniser/nvim.nix";
+    nvim.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = {
@@ -29,12 +29,9 @@
     nixpkgs,
     home-manager,
     fenix,
-    get-flake,
+    nvim,
     ...
-  } @ inputs: let
-    # Local neovim flake
-    nvim = get-flake ./nvim;
-  in {
+  } @ inputs: {
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .#Ethans-MacBook-Pro
     darwinConfigurations."Ethans-MacBook-Pro" = darwin.lib.darwinSystem {
