@@ -17,7 +17,7 @@
     fenix.inputs.nixpkgs.follows = "nixpkgs";
 
     # Local neovim flake
-    nvim.url = "path:./nvim";
+    nvim.url = "github:ethanniser/nvim.nix";
     nvim.inputs.nixpkgs.follows = "nixpkgs";
   };
 

@@ -170,14 +170,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1,
-        "narHash": "sha256-44HB0skpmjCB5HafMKavWL1c1iLXr1cX3TaDv9g9Mfs=",
-        "path": "./nvim",
-        "type": "path"
+        "lastModified": 1722926591,
+        "narHash": "sha256-a5rX3sWGORj88lm8meJcEDMlm60Ps4lx+sCKwyIPZ7w=",
+        "owner": "ethanniser",
+        "repo": "nvim.nix",
+        "rev": "f201114cbb685fdd0d6f603648555dec515a64b1",
+        "type": "github"
       },
       "original": {
-        "path": "./nvim",
-        "type": "path"
+        "owner": "ethanniser",
+        "repo": "nvim.nix",
+        "type": "github"
       }
     },
     "root": {
