@@ -1,5 +1,5 @@
 {
-  description = "my minimal flake";
+  description = "My system configuration";
   inputs = {
     # Where we get most of our software. Giant mono repo with recipes
     # called derivations that say how to build software.
@@ -16,8 +16,9 @@
     fenix.url = "github:nix-community/fenix";
     fenix.inputs.nixpkgs.follows = "nixpkgs";
 
-    flake-utils.url = "github:numtide/flake-utils";
-    gen-luarc.url = "github:mrcjkb/nix-gen-luarc-json";
+    # Local neovim flake
+    nvim.url = "github:ethanniser/nvim.nix";
+    nvim.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = {
@@ -26,17 +27,9 @@
     nixpkgs,
     home-manager,
     fenix,
-    flake-utils,
-    gen-luarc,
+    nvim,
     ...
-  }@inputs: 
-    let 
-    nvim-flake = import ./nvim/flake.nix;
-    nvim = nvim-flake.outputs {
-      inherit self nixpkgs flake-utils gen-luarc;
-    };
-    in 
-    {
+  }@inputs : {
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .#Ethans-MacBook-Pro
     darwinConfigurations."Ethans-MacBook-Pro" = darwin.lib.darwinSystem {
@@ -54,6 +47,9 @@
             useGlobalPkgs = true;
             useUserPackages = true;
             users.ethan.imports = [./modules/home-manager.nix];
+            extraSpecialArgs = {
+              inherit inputs;
+            };
           };
 
           system.configurationRevision = self.rev or self.dirtyRev or null;
