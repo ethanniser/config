@@ -86,7 +86,6 @@
       nodePackages.prettier
       wget
       just
-      # neovide
       # TODO: how to add global npm packages?
     ];
   };

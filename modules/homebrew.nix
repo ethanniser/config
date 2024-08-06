@@ -53,8 +53,8 @@ _: {
       "docker"
       "karabiner-elements"
       "scroll-reverser"
-      # "neovide"
       "backblaze"
+      "neovide"
     ];
     taps = [];
     # CHECK NIX FIRST!
