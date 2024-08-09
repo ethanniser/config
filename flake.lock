@@ -111,6 +111,22 @@
         "type": "github"
       }
     },
+    "gx-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1722942704,
+        "narHash": "sha256-P2euQwbzLn++pbXP29Kzhv9kM99lCAk7mIeBaT8SWqI=",
+        "owner": "chrishrb",
+        "repo": "gx.nvim",
+        "rev": "28060914ee334da8a7f3c17509fd23cec023a0f7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "chrishrb",
+        "repo": "gx.nvim",
+        "type": "github"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -180,17 +196,18 @@
       "inputs": {
         "flake-utils": "flake-utils",
         "gen-luarc": "gen-luarc",
+        "gx-nvim": "gx-nvim",
         "nixpkgs": [
           "nixpkgs"
         ],
         "telescope-helpgrep-nvim": "telescope-helpgrep-nvim"
       },
       "locked": {
-        "lastModified": 1723131665,
-        "narHash": "sha256-6yUDsMY1t3CXXnNur6U1wpvoaNvSg/dMp5DzQizcgnY=",
+        "lastModified": 1723184204,
+        "narHash": "sha256-ZkGrXTvw0+Gzvw5y4b21PUjA6XTRUhtafQptFEbarw8=",
         "owner": "ethanniser",
         "repo": "nvim.nix",
-        "rev": "aebb057c6f2c61b5a2d453bace878e10d3eadbd7",
+        "rev": "6c16363b2337207e44067c982668284eaf93eff6",
         "type": "github"
       },
       "original": {
