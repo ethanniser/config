@@ -203,11 +203,11 @@
         "telescope-helpgrep-nvim": "telescope-helpgrep-nvim"
       },
       "locked": {
-        "lastModified": 1723216397,
-        "narHash": "sha256-1WcvfBBdT4pZb9XLbAMsInYfvtGw0WMSmzEa5b12Ro0=",
+        "lastModified": 1723221124,
+        "narHash": "sha256-gR9tpo8MTiGu//X5V0bRQzyuv8ze/j6+88JRO6HqUtQ=",
         "owner": "ethanniser",
         "repo": "nvim.nix",
-        "rev": "ac2d01243eaae482a5c44716b69804a52b3eab04",
+        "rev": "3b20caa17c18fb9d718d843e1671ecd13adef21b",
         "type": "github"
       },
       "original": {
