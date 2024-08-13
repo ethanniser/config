@@ -26,8 +26,8 @@
       # FROM OVERLAYS
 
       # nvim
-      configured-nvim
-      configured-nvim-deps
+      # configured-nvim
+      # configured-nvim-deps
 
       # fenix
       # (fenix.complete.withComponents [
