@@ -34,8 +34,7 @@
   # system.keyboard.enableKeyMapping = true;
   # system.keyboard.remapCapsLockToEscape = true;
   fonts = {
-    fontDir.enable = false;
-    fonts = with pkgs; [
+    packages = with pkgs; [
       (nerdfonts.override {
         fonts = [
           "Meslo"

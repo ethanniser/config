@@ -30,13 +30,13 @@
       configured-nvim-deps
 
       # fenix
-      (fenix.complete.withComponents [
-        "cargo"
-        "clippy"
-        "rust-src"
-        "rustc"
-        "rustfmt"
-      ])
+      # (fenix.complete.withComponents [
+      #   "cargo"
+      #   "clippy"
+      #   "rust-src"
+      #   "rustc"
+      #   "rustfmt"
+      # ])
 
       # FROM NIXPKGS
       ripgrep
@@ -62,14 +62,6 @@
       alejandra
       fastfetch
       cowsay
-      (nerdfonts.override {
-        fonts = [
-          "Meslo"
-          "IntelOneMono"
-          "FiraCode"
-          "JetBrainsMono"
-        ];
-      })
       zsh-powerlevel10k
       corepack_latest
       ripgrep
