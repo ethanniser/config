@@ -18,3 +18,4 @@ git submodule update --init --recursive
 
 ### other software I installed
  - yaak
+ - ghostty
