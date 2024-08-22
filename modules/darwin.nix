@@ -97,6 +97,7 @@
         NSAutomaticSpellingCorrectionEnabled = false;
         NSAutomaticCapitalizationEnabled = false;
         NSAutomaticPeriodSubstitutionEnabled = false;
+        NSAutomaticWindowAnimationsEnabled = false;
       };
       screencapture = {
         type = "jpg";
