@@ -77,7 +77,7 @@
           "/Applications/Arc.app"
           "/Applications/Discord.app"
           "/System/Applications/System Settings.app"
-          "/Users/ethan/Applications/Home Manager Apps/kitty.app"
+          "/Applications/Ghostty.app"
           "/Applications/Obsidian.app"
           "/Applications/Microsoft Outlook.app"
         ];
