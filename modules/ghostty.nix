@@ -5,7 +5,6 @@ _: {
     font-size = 14
 
     shell-integration = zsh
-    window-decoration = false
     macos-option-as-alt = true
   '';
 }
