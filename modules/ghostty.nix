@@ -1,5 +1,5 @@
 _: {
   xdg.configFile."ghostty/config".text = ''
-    theme = Oxocarbon
+    theme = Monokai Remastered
   '';
 }
