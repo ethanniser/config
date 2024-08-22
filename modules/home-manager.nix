@@ -9,6 +9,7 @@
     ./tmux.nix
     ./kitty.nix
     ./karabiner
+    ./ghostty.nix
   ];
 
   home = {
