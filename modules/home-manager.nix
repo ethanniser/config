@@ -78,6 +78,7 @@
       nodePackages.prettier
       wget
       just
+      uv
       # TODO: how to add global npm packages?
     ];
   };
