@@ -1,12 +1,11 @@
 _: {
   xdg.configFile."ghostty/config".text = ''
-    # theme
     theme = Monokai Remastered
-
-    # fonts
     font-family = MesloLGS Nerd Font
     font-size = 14
 
+    shell-integration = zsh
+    window-decoration = false
     macos-option-as-alt = true
   '';
 }
