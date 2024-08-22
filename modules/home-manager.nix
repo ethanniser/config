@@ -26,17 +26,17 @@
       # FROM OVERLAYS
 
       # nvim
-      # configured-nvim
-      # configured-nvim-deps
+      configured-nvim
+      configured-nvim-deps
 
       # fenix
-      # (fenix.complete.withComponents [
-      #   "cargo"
-      #   "clippy"
-      #   "rust-src"
-      #   "rustc"
-      #   "rustfmt"
-      # ])
+      (fenix.complete.withComponents [
+        "cargo"
+        "clippy"
+        "rust-src"
+        "rustc"
+        "rustfmt"
+      ])
 
       # FROM NIXPKGS
       ripgrep
