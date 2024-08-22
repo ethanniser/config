@@ -43,6 +43,7 @@
       gdmb = "git branch --merged | grep -Ev '(^\\*|main)' | xargs git branch -d";
       gbsc = "git branch --sort=-committerdate";
       reload = "source ~/.config/zsh/.zshrc";
+      ghostty = "/Applications/Ghostty.app/Contents/MacOS/ghostty";
     };
 
     initExtraBeforeCompInit = ''
