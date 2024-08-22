@@ -1,6 +1,6 @@
 _: {
   xdg.configFile."ghostty/config".text = ''
-    theme = Vesper
+    theme = Monokai Remastered
     font-family = MesloLGS Nerd Font
     font-size = 14
 
