@@ -6,5 +6,6 @@ _: {
 
     shell-integration = zsh
     macos-option-as-alt = true
+    adjust-cursor-thickness = 25%
   '';
 }
