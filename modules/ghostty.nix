@@ -4,7 +4,7 @@ _: {
     font-family = MesloLGS Nerd Font
     font-size = 14
 
-    shell-integration = none
+    shell-integration = zsh
     macos-option-as-alt = true
     mouse-hide-while-typing = true
     adjust-cursor-thickness = 2
