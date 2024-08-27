@@ -301,11 +301,11 @@
         "telescope-helpgrep-nvim": "telescope-helpgrep-nvim"
       },
       "locked": {
-        "lastModified": 1724767041,
-        "narHash": "sha256-JZU1B3IkTNU8SDqy5Pbxa2uaKJRyKYGAXRpgyrwSSH0=",
+        "lastModified": 1724767207,
+        "narHash": "sha256-oXqfIj6QymB4vs3L2hzVPkBbV08eclDDvGMTReNW4YI=",
         "owner": "ethanniser",
         "repo": "nvim.nix",
-        "rev": "c088befc04305c42d866c852131f6662116cc8cf",
+        "rev": "40dc21d02dd3513a3927d01770d9fd8856d7ceba",
         "type": "github"
       },
       "original": {
