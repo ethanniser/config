@@ -12,8 +12,8 @@ diff:
     set -euo pipefail
 
     if ! git diff --quiet || ! git diff --quiet --cached; then
-        git diff -U0
-        git diff --cached -U0
+        git diff -U0 --no-pager
+        git diff --cached -U0 --no-pager
     else
         echo "No changes detected."
     fi
@@ -44,4 +44,3 @@ commit:
 
 update:
     nix flake update
-
