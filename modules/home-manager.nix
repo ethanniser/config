@@ -79,6 +79,7 @@
       wget
       just
       uv
+      asciinema
       # TODO: how to add global npm packages?
     ];
   };

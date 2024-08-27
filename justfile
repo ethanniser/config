@@ -12,8 +12,8 @@ diff:
     set -euo pipefail
 
     if ! git diff --quiet || ! git diff --quiet --cached; then
-        git diff -U0 --no-pager
-        git diff --cached -U0 --no-pager
+        git --no-pager diff -U0 
+        git --no-pager diff --cached -U0
     else
         echo "No changes detected."
     fi
