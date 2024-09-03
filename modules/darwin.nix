@@ -73,6 +73,7 @@
         show-recents = false;
         persistent-apps = [
           "/System/Applications/Messages.app"
+          "/Applications/Slack.app"
           "/Applications/Visual Studio Code.app"
           "/Applications/Arc.app"
           "/Applications/Discord.app"
