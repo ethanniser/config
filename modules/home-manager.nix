@@ -7,6 +7,7 @@
     ./git.nix
     ./zsh
     ./tmux.nix
+    ./kitty.nix
     ./karabiner
     ./ghostty.nix
   ];
