@@ -55,6 +55,7 @@ _: {
       "scroll-reverser"
       "backblaze"
       "neovide"
+      "kitty"
     ];
     taps = [];
     # CHECK NIX FIRST!
