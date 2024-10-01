@@ -12,6 +12,8 @@ _: {
       };
     };
 
+    ignores = ["**/.DS_STORE"];
+
     extraConfig = {
       github = {
         user = "ethanniser";
