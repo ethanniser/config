@@ -44,6 +44,7 @@
       gbsc = "git branch --sort=-committerdate";
       reload = "source ~/.config/zsh/.zshrc";
       ghostty = "/Applications/Ghostty.app/Contents/MacOS/ghostty";
+      lg = "lazygit";
     };
 
     initExtraBeforeCompInit = ''
