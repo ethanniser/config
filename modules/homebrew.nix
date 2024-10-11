@@ -57,6 +57,7 @@ _: {
       "neovide"
       "kitty"
       "UTM"
+      "alt-tab"
     ];
     taps = [];
     # CHECK NIX FIRST!
