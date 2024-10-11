@@ -56,6 +56,7 @@ _: {
       "backblaze"
       "neovide"
       "kitty"
+      "UTM"
     ];
     taps = [];
     # CHECK NIX FIRST!
