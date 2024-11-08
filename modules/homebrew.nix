@@ -58,6 +58,7 @@ _: {
       "kitty"
       "UTM"
       "alt-tab"
+      "anki"
     ];
     taps = [];
     # CHECK NIX FIRST!
