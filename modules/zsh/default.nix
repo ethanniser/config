@@ -45,6 +45,7 @@
       reload = "source ~/.config/zsh/.zshrc";
       ghostty = "/Applications/Ghostty.app/Contents/MacOS/ghostty";
       lg = "lazygit";
+      b = "bun run";
     };
 
     initExtraBeforeCompInit = ''
