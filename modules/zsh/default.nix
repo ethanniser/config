@@ -62,6 +62,22 @@
       }
 
       eval "$(zoxide init zsh)"
+
+      case ":$PATH:" in
+          *:"$HOME/.cabal/bin":*)
+              ;;
+          *)
+              export PATH="$PATH:$HOME/.cabal/bin"
+              ;;
+      esac
+      case ":$PATH:" in
+          *:"/Users/ethan/.ghcup/bin":*)
+              ;;
+          *)
+              export PATH="$PATH:/Users/ethan/.ghcup/bin"
+              ;;
+      esac
+
     '';
 
     history = {
