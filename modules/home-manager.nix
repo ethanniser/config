@@ -84,7 +84,6 @@
       turso-cli
       # TODO: how to add global npm packages?
       lldb
-      ghc
     ];
   };
 
