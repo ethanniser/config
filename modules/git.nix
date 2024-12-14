@@ -32,6 +32,7 @@ _: {
         fileMode = false;
         ignorecase = false;
       };
+      rerere.enabled = true;
     };
   };
 }
