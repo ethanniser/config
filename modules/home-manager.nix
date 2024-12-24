@@ -84,6 +84,12 @@
       turso-cli
       # TODO: how to add global npm packages?
       lldb
+
+      # a bit of fun :)
+      cmatrix
+      cowsay
+      lolcat
+      cbonsai
     ];
   };
 
