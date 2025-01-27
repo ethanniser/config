@@ -22,7 +22,6 @@
   programs.zsh.enable = true;
   environment = {
     shells = with pkgs; [bash zsh];
-    loginShell = pkgs.zsh;
     systemPackages = with pkgs; [
       coreutils
       vim
@@ -35,14 +34,10 @@
   # system.keyboard.remapCapsLockToEscape = true;
   fonts = {
     packages = with pkgs; [
-      (nerdfonts.override {
-        fonts = [
-          "Meslo"
-          "IntelOneMono"
-          "FiraCode"
-          "JetBrainsMono"
-        ];
-      })
+      nerd-fonts.meslo-lg
+      nerd-fonts.intone-mono
+      nerd-fonts.fira-code
+      nerd-fonts.jetbrains-mono
     ];
   };
 

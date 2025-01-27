@@ -52,7 +52,7 @@
       htop
       jq
       nodejs_22
-      (pkgs.elixir_1_16.override {erlang = pkgs.erlang_26;})
+      elixir
       speedtest-cli
       (python312.withPackages
         (python-pkgs: with python-pkgs; [pip ipykernel]))
@@ -97,7 +97,7 @@
     eza = {
       enable = true;
       enableZshIntegration = true;
-      icons = true;
+      icons = "auto";
       git = true;
     };
     bat = {
