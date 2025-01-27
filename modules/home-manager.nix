@@ -90,6 +90,7 @@
       cowsay
       lolcat
       cbonsai
+      deno
     ];
   };
 
