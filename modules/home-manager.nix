@@ -91,6 +91,7 @@
       lolcat
       cbonsai
       deno
+      redis
     ];
   };
 
