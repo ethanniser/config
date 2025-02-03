@@ -29,6 +29,13 @@
     ];
     systemPath = ["/opt/homebrew/bin" "/Users/ethan/.npm-global/bin"];
     pathsToLink = ["/Applications"];
+    
+    # use touch id for sudo
+    etc = {
+      "pam.d/sudo_local".text = ''
+        auth sufficient pam_tid.so
+      '';
+    };
   };
   # system.keyboard.enableKeyMapping = true;
   # system.keyboard.remapCapsLockToEscape = true;
