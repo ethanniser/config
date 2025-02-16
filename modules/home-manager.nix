@@ -93,6 +93,7 @@
       deno
       redis
       cmake
+      radare2
     ];
   };
 
