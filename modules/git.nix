@@ -15,6 +15,9 @@ _: {
     ignores = ["**/.DS_STORE"];
 
     extraConfig = {
+      column = {
+        ui = "auto";
+      };
       github = {
         user = "ethanniser";
       };
@@ -22,17 +25,47 @@ _: {
         defaultBranch = "main";
       };
       pull = {
-        rebase = false;
+        rebase = true;
       };
       push = {
         autoSetupRemote = true;
+        default = "simple";
+      };
+      branch = {
+        sort = "-committerdate";
+      };
+      tag = {
+        sort = "version:refname";
+      };
+      diff = {
+        algorithm = "histogram";
+        colorMoved = "plain";
+        mnemonicPrefix = true;
+        renames = true;
+      };
+      help = {
+        autocorrect = "prompt";
+      };
+      commit = {
+        verbose = true;
+      };
+      rerere = {
+        enabled = true;
+        autoupdate = true;
       };
       core = {
         editor = "nvim";
         fileMode = false;
         ignorecase = false;
       };
-      rerere.enabled = true;
+      rebase = {
+        autoSquash = true;
+        autoStash = true;
+        updateRefs = true;
+      };
+      merge = {
+        conflictstyle = "zdiff3";
+      };
     };
   };
 }
