@@ -22,12 +22,12 @@ switch-quiet:
     #!/usr/bin/env bash
     set -euo pipefail
 
-    nix flake lock --update-input nvim
+    nix flake update nvim
     darwin-rebuild switch --flake . &>nix-switch.log || (
         cat nix-switch.log | grep --color error && false)
 
 switch-loud:
-    nix flake lock --update-input nvim
+    nix flake update nvim
     darwin-rebuild switch --flake .
 
 commit:
