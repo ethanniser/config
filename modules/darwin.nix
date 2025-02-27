@@ -10,7 +10,7 @@
   # backwards compat; don't change
   system.stateVersion = 4;
   nix.settings.experimental-features = "nix-command flakes";
-  services.nix-daemon.enable = true;
+  nix.enable = true;
   users.users.ethan = {
     home = "/Users/ethan";
     shell = pkgs.zsh;
@@ -29,13 +29,6 @@
     ];
     systemPath = ["/opt/homebrew/bin" "/Users/ethan/.npm-global/bin"];
     pathsToLink = ["/Applications"];
-
-    # use touch id for sudo
-    etc = {
-      "pam.d/sudo_local".text = ''
-        auth sufficient pam_tid.so
-      '';
-    };
   };
   # system.keyboard.enableKeyMapping = true;
   # system.keyboard.remapCapsLockToEscape = true;
@@ -46,6 +39,13 @@
       nerd-fonts.fira-code
       nerd-fonts.jetbrains-mono
     ];
+  };
+  # use touch id for sudo
+  security = {
+    pam.services.sudo_local = {
+      enable = true;
+      touchIdAuth = true;
+    };
   };
 
   # =================== MAIN STUFF HERE ====================
