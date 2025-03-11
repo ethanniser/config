@@ -94,6 +94,7 @@
       redis
       cmake
       radare2
+      go
     ];
   };
 
