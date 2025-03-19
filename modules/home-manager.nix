@@ -30,15 +30,6 @@
       configured-nvim
       configured-nvim-deps
 
-      # fenix
-      (fenix.complete.withComponents [
-        "cargo"
-        "clippy"
-        "rust-src"
-        "rustc"
-        "rustfmt"
-      ])
-
       # FROM NIXPKGS
       ripgrep
       fd
@@ -49,40 +40,23 @@
       bun
       git
       ffmpeg
-      htop
       jq
       nodejs_22
-      elixir
-      speedtest-cli
-      (python312.withPackages
-        (python-pkgs: with python-pkgs; [pip ipykernel]))
       ollama
-      wifi-password
       mas
-      imagemagick
-      alejandra
       fastfetch
       cowsay
       zsh-powerlevel10k
       corepack_latest
-      ripgrep
-      gitui
-      docker_26
       zoxide
       btop
-      tig
       lazygit
-      zig
-      bacon
       stylua
       prettierd
       nodePackages.prettier
       wget
       just
       uv
-      asciinema
-      turso-cli
-      # TODO: how to add global npm packages?
       lldb
 
       # a bit of fun :)
@@ -92,9 +66,7 @@
       cbonsai
       deno
       redis
-      cmake
       radare2
-      go
     ];
   };
 

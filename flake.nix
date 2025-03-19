@@ -13,9 +13,6 @@
     darwin.url = "github:lnl7/nix-darwin";
     darwin.inputs.nixpkgs.follows = "nixpkgs";
 
-    fenix.url = "github:nix-community/fenix";
-    fenix.inputs.nixpkgs.follows = "nixpkgs";
-
     get-flake.url = "github:ursi/get-flake";
 
     # Neovim flake
@@ -40,7 +37,6 @@
         system = "aarch64-darwin";
         overlays = [
           nvim.overlays.default
-          fenix.overlays.default
         ];
       };
       modules = [
