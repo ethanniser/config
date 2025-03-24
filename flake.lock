@@ -300,11 +300,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1742782461,
-        "narHash": "sha256-InIkSyArsq/fi27CwWayyJEnUcU+4D93Oe6YKdTLWq4=",
+        "lastModified": 1742782985,
+        "narHash": "sha256-waf4N23+vL+oeRkd7TSO555dCue1fVMl+RmlouBzznw=",
         "owner": "ethanniser",
         "repo": "nvim.nix",
-        "rev": "bac1fa75744e42071dce626833c44c89e24723f0",
+        "rev": "6bc473762d203fd9293ba80c8e0b871af7be2b47",
         "type": "github"
       },
       "original": {
