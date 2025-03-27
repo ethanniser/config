@@ -67,6 +67,7 @@
       deno
       redis
       radare2
+      direnv
     ];
   };
 
