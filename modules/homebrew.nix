@@ -60,6 +60,7 @@ _: {
       "alt-tab"
       "anki"
       "wireshark"
+      "mpv"
     ];
     taps = [];
     # CHECK NIX FIRST!
