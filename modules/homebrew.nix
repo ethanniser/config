@@ -59,6 +59,7 @@ _: {
       "UTM"
       "alt-tab"
       "anki"
+      "wireshark"
     ];
     taps = [];
     # CHECK NIX FIRST!
