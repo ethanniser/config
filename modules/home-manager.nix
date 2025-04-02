@@ -10,6 +10,7 @@
     ./kitty.nix
     ./karabiner
     ./ghostty.nix
+    ./mpv
   ];
 
   home = {
