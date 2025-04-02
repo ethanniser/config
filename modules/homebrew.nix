@@ -61,7 +61,7 @@ _: {
       "anki"
       "wireshark"
       "mpv"
-      "qbittorrent"
+      "cyberduck"
     ];
     taps = [];
     # CHECK NIX FIRST!
