@@ -69,6 +69,7 @@
       redis
       radare2
       direnv
+      cmake
     ];
   };
 
