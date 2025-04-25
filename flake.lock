@@ -174,22 +174,6 @@
         "type": "github"
       }
     },
-    "gx-nvim": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1736242098,
-        "narHash": "sha256-S7GDbKvcmSfysahfq7yCw55R2LGriWM29yAX1mPn1LQ=",
-        "owner": "chrishrb",
-        "repo": "gx.nvim",
-        "rev": "c7e6a0ace694a098a5248d92a866c290bd2da1cc",
-        "type": "github"
-      },
-      "original": {
-        "owner": "chrishrb",
-        "repo": "gx.nvim",
-        "type": "github"
-      }
-    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -307,17 +291,17 @@
       "inputs": {
         "flake-utils": "flake-utils",
         "gen-luarc": "gen-luarc",
-        "gx-nvim": "gx-nvim",
         "nixpkgs": [
           "nixpkgs"
-        ]
+        ],
+        "stickybuf": "stickybuf"
       },
       "locked": {
-        "lastModified": 1743018791,
-        "narHash": "sha256-4sK4aPW8w1XWPhvf65Btxnhu2b8IWuXsy33TlAJYz1Y=",
+        "lastModified": 1745557917,
+        "narHash": "sha256-DjFm23bDcMQ2tNDdrsPNsygI0dRpPNEiqCl43I93U8k=",
         "owner": "ethanniser",
         "repo": "nvim.nix",
-        "rev": "462a4f70d748f8865cb632a740af6906c73a323f",
+        "rev": "6b376584ffb8b64f7dd8dc79c02ff35207ca019d",
         "type": "github"
       },
       "original": {
@@ -350,6 +334,22 @@
         "owner": "rust-lang",
         "ref": "nightly",
         "repo": "rust-analyzer",
+        "type": "github"
+      }
+    },
+    "stickybuf": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1741152776,
+        "narHash": "sha256-tMP91R7da79K7035lkVzVQ59xe8uG46qeH3uQU0iQLk=",
+        "owner": "stevearc",
+        "repo": "stickybuf.nvim",
+        "rev": "0c1e5f1a3eb36eea2cea57083828269cc62c58e4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stevearc",
+        "repo": "stickybuf.nvim",
         "type": "github"
       }
     },
