@@ -76,7 +76,7 @@
         persistent-apps = [
           "/System/Applications/Messages.app"
           "/Applications/Slack.app"
-          "/Applications/Visual Studio Code.app"
+          "/Applications/Cursor.app"
           "/Applications/Arc.app"
           "/Applications/Discord.app"
           "/System/Applications/System Settings.app"
