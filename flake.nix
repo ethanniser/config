@@ -25,7 +25,6 @@
     darwin,
     nixpkgs,
     home-manager,
-    fenix,
     nvim,
     ...
   } @ inputs: {
@@ -33,29 +32,10 @@
     # $ darwin-rebuild build --flake .#Ethans-MacBook-Pro
     darwinConfigurations."Ethans-MacBook-Pro" = darwin.lib.darwinSystem {
       system = "aarch64-darwin";
-      pkgs = import nixpkgs {
-        system = "aarch64-darwin";
-        overlays = [
-          nvim.overlays.default
-        ];
-      };
       modules = [
-        ./modules/darwin.nix
-        ./modules/homebrew.nix
-        home-manager.darwinModules.home-manager
-        {
-          home-manager = {
-            useGlobalPkgs = true;
-            useUserPackages = true;
-            users.ethan.imports = [./modules/home-manager.nix];
-            extraSpecialArgs = {
-              inherit inputs;
-            };
-          };
-
-          system.configurationRevision = self.rev or self.dirtyRev or null;
-        }
+        ./hosts/Ethans-MacBook-Pro/configuration.nix
       ];
+      specialArgs = { inherit inputs self; };
     };
 
     # Expose the package set, including overlays, for convenience.

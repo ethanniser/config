@@ -23,12 +23,12 @@ switch-quiet:
     set -euo pipefail
 
     nix flake update nvim
-    darwin-rebuild switch --flake . &>nix-switch.log || (
+    darwin-rebuild switch --flake .#Ethans-MacBook-Pro &>nix-switch.log || (
         cat nix-switch.log | grep --color error && false)
 
 switch-loud:
     nix flake update nvim
-    darwin-rebuild switch --flake .
+    darwin-rebuild switch --flake .#Ethans-MacBook-Pro
 
 commit:
     #!/usr/bin/env bash
