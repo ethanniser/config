@@ -1,7 +1,7 @@
-default:
+default host:
     just format
     just diff
-    just switch-quiet
+    just switch-quiet {{host}}
     just commit
 
 format:
@@ -18,17 +18,17 @@ diff:
         echo "No changes detected."
     fi
 
-switch-quiet:
+switch-quiet host:
     #!/usr/bin/env bash
     set -euo pipefail
 
     nix flake update nvim
-    darwin-rebuild switch --flake .#Ethans-MacBook-Pro &>nix-switch.log || (
+    darwin-rebuild switch --flake .#{{host}} &>nix-switch.log || (
         cat nix-switch.log | grep --color error && false)
 
-switch-loud:
+switch-loud host:
     nix flake update nvim
-    darwin-rebuild switch --flake .#Ethans-MacBook-Pro
+    darwin-rebuild switch --flake .#{{host}}
 
 commit:
     #!/usr/bin/env bash

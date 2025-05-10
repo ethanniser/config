@@ -29,16 +29,22 @@
     ...
   } @ inputs: {
     # Build darwin flake using:
-    # $ darwin-rebuild build --flake .#Ethans-MacBook-Pro
-    darwinConfigurations."Ethans-MacBook-Pro" = darwin.lib.darwinSystem {
+    # $ darwin-rebuild build --flake .#<name>
+
+    darwinConfigurations."mbp" = darwin.lib.darwinSystem {
       system = "aarch64-darwin";
       modules = [
-        ./hosts/Ethans-MacBook-Pro/configuration.nix
+        ./hosts/mbp/configuration.nix
       ];
-      specialArgs = { inherit inputs self; };
+      specialArgs = {inherit inputs self;};
     };
 
-    # Expose the package set, including overlays, for convenience.
-    darwinPackages = self.darwinConfigurations."Ethans-MacBook-Pro".pkgs;
+    darwinConfigurations."work" = darwin.lib.darwinSystem {
+      system = "aarch64-darwin";
+      modules = [
+        ./hosts/work/configuration.nix
+      ];
+      specialArgs = {inherit inputs self;};
+    };
   };
 }
