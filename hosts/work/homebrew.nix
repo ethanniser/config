@@ -10,7 +10,6 @@
       "cursor"
       "slack"
       "visual-studio-code"
-      "zoom"
       "raycast"
       "shottr"
       "rectangle"
@@ -24,6 +23,7 @@
       "neovide"
       "ghostty"
       "alt-tab"
+      "notion"
     ];
 
     # CHECK NIX FIRST!

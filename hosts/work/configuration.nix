@@ -26,6 +26,8 @@
       inherit inputs self;
     };
   };
+  # idk what this does
+  ids.gids.nixbld = 350;
 
   # TODO: Customize hostname and other work-laptop specific settings
   networking.hostName = "work";
