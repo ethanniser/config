@@ -1,4 +1,4 @@
-default host:
+switch host:
     just format
     just diff
     just switch-quiet {{host}}
