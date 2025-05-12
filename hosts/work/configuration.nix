@@ -1,14 +1,11 @@
 {
-  config,
-  lib,
-  pkgs,
   inputs,
   self,
   ...
 }: {
   imports = [
     ../../modules/darwin.nix
-    ../../modules/homebrew.nix
+    ./homebrew.nix
     inputs.home-manager.darwinModules.home-manager
   ];
 
@@ -31,7 +28,7 @@
   };
 
   # TODO: Customize hostname and other work-laptop specific settings
-  networking.hostName = "work-laptop"; # <--- SET YOUR DESIRED HOSTNAME HERE
+  networking.hostName = "work";
 
   system.configurationRevision = self.rev or self.dirtyRev or null;
   system.stateVersion = 4; # Or match your other machine's stateVersion

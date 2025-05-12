@@ -1,14 +1,11 @@
 {
-  config,
-  lib,
-  pkgs,
   inputs,
   self,
   ...
 }: {
   imports = [
     ../../modules/darwin.nix
-    ../../modules/homebrew.nix
+    ./homebrew.nix
     inputs.home-manager.darwinModules.home-manager
   ];
 

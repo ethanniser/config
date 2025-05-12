@@ -1,13 +1,8 @@
-{
-  pkgs,
-  inputs,
-  ...
-}: {
+{pkgs, ...}: {
   imports = [
     ./git.nix
     ./zsh
     ./tmux.nix
-    ./kitty.nix
     ./karabiner
     ./ghostty.nix
     ./mpv
