@@ -1,7 +1,7 @@
 switch host:
     just format
     just diff
-    just switch-quiet {{host}}
+    just switch-loud {{ host }}
     just commit
 
 format:
@@ -23,12 +23,12 @@ switch-quiet host:
     set -euo pipefail
 
     nix flake update nvim
-    darwin-rebuild switch --flake .#{{host}} &>nix-switch.log || (
+    darwin-rebuild switch --flake .#{{ host }} &>nix-switch.log || (
         cat nix-switch.log | grep --color error && false)
 
 switch-loud host:
     nix flake update nvim
-    darwin-rebuild switch --flake .#{{host}}
+    darwin-rebuild switch --flake .#{{ host }}
 
 commit:
     #!/usr/bin/env bash
