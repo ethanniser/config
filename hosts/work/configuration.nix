@@ -6,6 +6,7 @@
   imports = [
     ../../modules/darwin.nix
     ./homebrew.nix
+    ./dock.nix
     inputs.home-manager.darwinModules.home-manager
   ];
 

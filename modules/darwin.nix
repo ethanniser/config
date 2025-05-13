@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   imports = [
     ./scripts
+    ./dock-common.nix
   ];
 
   # defaults I dont understand:
@@ -65,31 +66,6 @@
         _FXShowPosixPathInTitle = true;
         ShowPathbar = true;
         ShowStatusBar = true;
-      };
-      dock = {
-        showhidden = true;
-        autohide = true;
-        autohide-delay = 0.0;
-        autohide-time-modifier = 0.0;
-        orientation = "bottom";
-        show-recents = false;
-        persistent-apps = [
-          "/System/Applications/Messages.app"
-          "/Applications/Slack.app"
-          "/Applications/Cursor.app"
-          "/Applications/Arc.app"
-          "/Applications/Discord.app"
-          "/System/Applications/System Settings.app"
-          "/Applications/Ghostty.app"
-          "/Applications/Obsidian.app"
-          "/Applications/Microsoft Outlook.app"
-        ];
-        mineffect = "scale";
-        minimize-to-application = true;
-        wvous-br-corner = 1; # disabled
-        wvous-bl-corner = 3; # application windows
-        wvous-tr-corner = 12; # notification center
-        wvous-tl-corner = 2; # mission control
       };
       NSGlobalDomain = {
         AppleShowAllFiles = false;
