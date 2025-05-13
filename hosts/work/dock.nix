@@ -12,4 +12,4 @@
     "/Applications/Linear.app"
     "/Applications/1Password.app"
   ];
-} 
+}

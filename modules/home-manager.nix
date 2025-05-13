@@ -54,6 +54,7 @@
       just
       uv
       lldb
+      graphite-cli
 
       # a bit of fun :)
       cmatrix

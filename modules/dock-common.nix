@@ -13,4 +13,4 @@
     wvous-tr-corner = 12; # notification center
     wvous-tl-corner = 2; # mission control
   };
-} 
+}

@@ -8,4 +8,4 @@
     "/Applications/Ghostty.app"
     "/Applications/Obsidian.app"
   ];
-} 
+}

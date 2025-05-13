@@ -51,7 +51,7 @@
 
     initContent = ''
       source $HOME/.config/zsh/.p10k.zsh
-      
+
       lst() {
         if [[ -n $1 ]]; then
           eza -R --level="$1" --tree
