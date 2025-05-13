@@ -16,8 +16,10 @@
     get-flake.url = "github:ursi/get-flake";
 
     # Neovim flake
-    nvim.url = "github:ethanniser/nvim.nix";
-    nvim.inputs.nixpkgs.follows = "nixpkgs";
+    nvim = {
+      url = "github:ethanniser/nvim.nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {

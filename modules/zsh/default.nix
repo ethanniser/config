@@ -49,11 +49,9 @@
       serve = "python3 -m http.server";
     };
 
-    initExtraBeforeCompInit = ''
+    initContent = ''
       source $HOME/.config/zsh/.p10k.zsh
-    '';
-
-    initExtra = ''
+      
       lst() {
         if [[ -n $1 ]]; then
           eza -R --level="$1" --tree
