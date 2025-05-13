@@ -9,13 +9,13 @@ I got it started from [this video](https://www.youtube.com/watch?v=LE5JR4JcvMg&p
 git submodule update --init --recursive
 ```
 
+
 ## Other stuff
+
+RUN FIRST WITHOUT HOMEBREW, otherwise homebrew will bootstrap a bunch of cask deps that we want nix to install
 
 ### other settings I manually changed:
  - share menu options (extension -> share menu)
  - turn off siris voice
  - finder preferences + toolbar
 
-### other software I installed
- - yaak
- - ghostty
