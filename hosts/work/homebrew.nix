@@ -24,6 +24,7 @@
       "ghostty"
       "alt-tab"
       "notion"
+      "yaak"
     ];
 
     # CHECK NIX FIRST!
