@@ -12,6 +12,8 @@ _: {
       };
     };
 
+    lfs.enable = true;
+
     ignores = ["**/.DS_STORE"];
 
     extraConfig = {
