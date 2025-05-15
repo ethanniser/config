@@ -9,11 +9,29 @@
 
     dotDir = ".config/zsh"; # Already prepends $HOME
 
-    # oh-my-zsh = {
-    #   enable = true;
-    #   plugins = ["git" "direnv" "eza" "fzf" "gh"];
-    #   theme = "robbyrussell";
-    # };
+    oh-my-zsh = {
+      enable = true;
+      plugins = [
+        "git"
+        "direnv"
+        "eza"
+        "fzf"
+        "gh"
+        "zoxide"
+        "alias-finder"
+        "aliases"
+        "bun"
+        "docker"
+        "docker-compose"
+        "extract"
+        "git-auto-fetch"
+        "macos"
+        "ssh"
+        "sudo"
+        "tmux"
+      ];
+      theme = "robbyrussell";
+    };
 
     enableCompletion = true;
     autosuggestion = {
@@ -49,9 +67,6 @@
           eza -R --tree
         fi
       }
-
-      eval "$(zoxide init zsh)"
-      # eval "$(starship init zsh)"
 
       case ":$PATH:" in
           *:"$HOME/.cabal/bin":*)
