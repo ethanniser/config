@@ -1,4 +1,5 @@
-{pkgs, ...}: {
+{...}: {
+  home.file.".config/starship.toml".text = builtins.readFile ./starship.toml;
   # prompt is basically the shell...
   programs.starship = {
     enable = true;
