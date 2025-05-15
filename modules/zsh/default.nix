@@ -1,26 +1,36 @@
-{pkgs, ...}: {
-  home.file.".config/zsh/.p10k.zsh".text = builtins.readFile ./config/.p10k.zsh;
+{...}: {
+  home.file.".config/starship.toml".text = builtins.readFile ./starship.toml;
+  # prompt is basically the shell...
+  programs.starship = {
+    enable = true;
+    enableZshIntegration = true;
+  };
   programs.zsh = {
     enable = true;
 
     dotDir = ".config/zsh"; # Already prepends $HOME
 
-    plugins = with pkgs; [
-      {
-        file = "powerlevel10k.zsh-theme";
-        name = "powerlevel10k";
-        src = "${zsh-powerlevel10k}/share/zsh-powerlevel10k";
-      }
-      {
-        file = "p10k.zsh";
-        name = "powerlevel10k-config";
-        src = ./config/.p10k.zsh; # Some directory containing your p10k.zsh file
-      }
-    ];
-
     oh-my-zsh = {
       enable = true;
-      plugins = ["git" "direnv"];
+      plugins = [
+        "git"
+        "direnv"
+        "eza"
+        "fzf"
+        "gh"
+        "zoxide"
+        "alias-finder"
+        "aliases"
+        "bun"
+        "docker"
+        "docker-compose"
+        "extract"
+        "git-auto-fetch"
+        "macos"
+        "ssh"
+        "sudo"
+        "tmux"
+      ];
       theme = "robbyrussell";
     };
 
@@ -50,7 +60,6 @@
     };
 
     initContent = ''
-      source $HOME/.config/zsh/.p10k.zsh
 
       lst() {
         if [[ -n $1 ]]; then
@@ -59,8 +68,6 @@
           eza -R --tree
         fi
       }
-
-      eval "$(zoxide init zsh)"
 
       case ":$PATH:" in
           *:"$HOME/.cabal/bin":*)
