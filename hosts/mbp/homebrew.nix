@@ -36,7 +36,7 @@
       "alt-tab"
       "anki"
       "wireshark"
-      "mpv"
+      # "mpv" # always breaks for some weird reason
       "cyberduck"
       "ghostty"
       "cursor"
