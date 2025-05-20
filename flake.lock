@@ -281,11 +281,11 @@
         "stickybuf": "stickybuf"
       },
       "locked": {
-        "lastModified": 1747424926,
-        "narHash": "sha256-i8diEzYm0zG1G7QmPnAWN9U/4/Y9j7TR++cxS/vdwLU=",
+        "lastModified": 1747675981,
+        "narHash": "sha256-ho0Y8s4NkRY2A3Hd76jIp2UgZ4ae3UjtJZCcEHYVqhE=",
         "owner": "ethanniser",
         "repo": "nvim.nix",
-        "rev": "5daf230d626d4d786260f955c4c80c5fed23e7c7",
+        "rev": "7c92e58db7aff31194870f0cd87e01aa635d90b7",
         "type": "github"
       },
       "original": {
