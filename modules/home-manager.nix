@@ -55,6 +55,7 @@
       uv
       lldb
       graphite-cli
+      ast-grep
 
       # a bit of fun :)
       cmatrix
