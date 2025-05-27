@@ -56,7 +56,7 @@
       lldb
       graphite-cli
       ast-grep
-      cargo
+      rustup
 
       # a bit of fun :)
       cmatrix
