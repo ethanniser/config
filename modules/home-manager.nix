@@ -67,10 +67,7 @@
       redis
       radare2
       direnv
-      # for bun temp
-      cmake
-      zig
-      zls
+      mergiraf
     ];
   };
 

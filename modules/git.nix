@@ -59,6 +59,7 @@ _: {
         editor = "nvim";
         fileMode = false;
         ignorecase = false;
+        attributesfile = "~/.gitattributes";
       };
       rebase = {
         autoSquash = true;
@@ -67,6 +68,10 @@ _: {
       };
       merge = {
         conflictstyle = "zdiff3";
+      };
+      "merge \"mergiraf\"" = {
+        name = "mergiraf";
+        driver = "mergiraf merge --git %O %A %B -s %S -x %X -y %Y -p %P -l %L";
       };
     };
   };
