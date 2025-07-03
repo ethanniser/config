@@ -12,5 +12,6 @@ _: {
     mouse-hide-while-typing = true
     adjust-cursor-thickness = 2
     window-colorspace = display-p3
+    keybind = shift+enter=text:"\n"
   '';
 }
