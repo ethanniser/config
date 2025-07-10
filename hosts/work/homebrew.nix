@@ -11,7 +11,6 @@
       "slack"
       "visual-studio-code"
       "raycast"
-      "shottr"
       "rectangle"
       "stats"
       "bartender"
@@ -25,6 +24,7 @@
       "alt-tab"
       "notion"
       "yaak"
+      "cleanshot"
     ];
 
     # CHECK NIX FIRST!

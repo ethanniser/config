@@ -19,7 +19,6 @@
       "affinity-publisher"
       "cleanmymac"
       "raycast"
-      "shottr"
       "imageoptim"
       "obsidian"
       "rectangle"
@@ -40,6 +39,7 @@
       "cyberduck"
       "ghostty"
       "cursor"
+      "cleanshot"
     ];
 
     # CHECK NIX FIRST!
