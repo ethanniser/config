@@ -57,6 +57,8 @@
       lg = "lazygit";
       b = "bun run";
       serve = "python3 -m http.server";
+      gssu = "gt s -su";
+      gmas = "gt m -a && gt s";
     };
 
     initContent = ''
