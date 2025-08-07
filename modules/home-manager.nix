@@ -38,7 +38,6 @@
       ffmpeg
       jq
       nodejs_22
-      ollama
       mas
       fastfetch
       cowsay

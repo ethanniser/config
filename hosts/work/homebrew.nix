@@ -25,6 +25,7 @@
       "notion"
       "yaak"
       "cleanshot"
+      "shottr"
     ];
 
     # CHECK NIX FIRST!

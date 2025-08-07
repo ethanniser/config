@@ -40,6 +40,7 @@
       "ghostty"
       "cursor"
       "cleanshot"
+      "shottr"
     ];
 
     # CHECK NIX FIRST!
