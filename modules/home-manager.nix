@@ -56,6 +56,7 @@
       graphite-cli
       ast-grep
       rustup
+      jujutsu
 
       # a bit of fun :)
       cmatrix
