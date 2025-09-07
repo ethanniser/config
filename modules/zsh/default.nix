@@ -59,6 +59,7 @@
       serve = "python3 -m http.server";
       gssu = "gt s -su";
       gmas = "gt m -a && gt s";
+      yt-mp3 = "yt-dlp -x --audio-format mp3";
     };
 
     initContent = ''
