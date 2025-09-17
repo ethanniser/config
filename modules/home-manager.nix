@@ -18,6 +18,9 @@
       ENV = "/Users/ethan/.config/zsh/.zshrc";
       NPM_CONFIG_PREFIX = "~/.npm-global";
     };
+    sessionPath = [
+      "\${HOME}/.luarocks/bin"
+    ];
 
     packages = with pkgs; [
       # FROM OVERLAYS
@@ -57,6 +60,29 @@
       ast-grep
       rustup
       jujutsu
+
+      # EDGE NETWORK DEPENDENCIES
+      # Docker & K8s tools
+      docker-compose
+      kubectl
+      
+      # Media processing
+      imagemagick
+      
+      # Git tools
+      git-lfs
+      
+      # AWS tools
+      awscli2
+      aws-iam-authenticator
+      
+      # Lua development
+      lua5_4
+      lua54Packages.luarocks
+      
+      # HTTP tools
+      httpstat
+      ngrok
 
       # a bit of fun :)
       cmatrix

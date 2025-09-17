@@ -16,7 +16,7 @@
       "bartender"
       "microsoft-outlook"
       "obs"
-      "docker"
+      "orbstack"
       "karabiner-elements"
       "scroll-reverser"
       "neovide"
