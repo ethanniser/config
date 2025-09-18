@@ -65,21 +65,21 @@
       # Docker & K8s tools
       docker-compose
       kubectl
-      
+
       # Media processing
       imagemagick
-      
+
       # Git tools
       git-lfs
-      
+
       # AWS tools
       awscli2
       aws-iam-authenticator
-      
+
       # Lua development
       lua5_4
       lua54Packages.luarocks
-      
+
       # HTTP tools
       httpstat
       ngrok
@@ -94,6 +94,7 @@
       radare2
       direnv
       mergiraf
+      go
     ];
   };
 
