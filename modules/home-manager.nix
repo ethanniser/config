@@ -45,6 +45,7 @@
       fastfetch
       cowsay
       zsh-powerlevel10k
+      corepack_latest
       zoxide
       btop
       lazygit
