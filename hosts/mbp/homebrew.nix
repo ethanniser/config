@@ -26,7 +26,6 @@
       "bartender"
       "microsoft-outlook"
       "obs"
-      "docker"
       "karabiner-elements"
       "scroll-reverser"
       "backblaze"
@@ -41,6 +40,7 @@
       "cursor"
       "cleanshot"
       "shottr"
+      "orbstack"
     ];
 
     # CHECK NIX FIRST!
