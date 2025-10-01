@@ -1,4 +1,9 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  config,
+  lib,
+  ...
+}: {
   imports = [
     ./git.nix
     ./zsh
@@ -17,9 +22,11 @@
       VISUAL = "nvim";
       ENV = "/Users/ethan/.config/zsh/.zshrc";
       NPM_CONFIG_PREFIX = "~/.npm-global";
+      COREPACK_ENABLE_STRICT = "0";
     };
     sessionPath = [
       "\${HOME}/.luarocks/bin"
+      "\${HOME}/.npm-global/bin"
     ];
 
     packages = with pkgs; [
@@ -112,4 +119,10 @@
       enable = true;
     };
   };
+
+  # Enable corepack globally to avoid permission issues in git hooks
+  home.activation.enableCorepack = lib.hm.dag.entryAfter ["writeBoundary"] ''
+    export PATH="${pkgs.corepack_latest}/bin:$PATH"
+    ${pkgs.corepack_latest}/bin/corepack enable --install-directory=$HOME/.npm-global/bin 2>/dev/null || true
+  '';
 }
