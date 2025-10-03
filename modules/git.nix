@@ -17,6 +17,9 @@ _: {
     ignores = ["**/.DS_STORE"];
 
     extraConfig = {
+      user = {
+        signingkey = "AE29E3B18C7136AC";
+      };
       column = {
         ui = "auto";
       };
