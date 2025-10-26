@@ -94,6 +94,7 @@
       direnv
       mergiraf
       go
+      difftastic
     ];
   };
 
