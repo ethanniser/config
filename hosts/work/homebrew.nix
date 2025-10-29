@@ -30,6 +30,11 @@
 
     # CHECK NIX FIRST!
     brews = [
+      "pkg-config"
+      "openssl"
+      "zeromq"
+      "qt"
+      "boost"
     ];
 
     masApps = {

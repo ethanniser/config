@@ -95,13 +95,6 @@
       mergiraf
       go
       difftastic
-
-      # Pushpin build dependencies
-      pkg-config
-      openssl
-      zeromq
-      qt6.full
-      boost
     ];
   };
 
