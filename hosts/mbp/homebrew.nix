@@ -29,7 +29,6 @@
       "karabiner-elements"
       "scroll-reverser"
       "backblaze"
-      "neovide"
       "UTM"
       "alt-tab"
       "anki"

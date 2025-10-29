@@ -19,7 +19,6 @@
       "orbstack"
       "karabiner-elements"
       "scroll-reverser"
-      "neovide"
       "ghostty"
       "alt-tab"
       "notion"
