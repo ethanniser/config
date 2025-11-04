@@ -61,6 +61,7 @@
       gmas = "gt m -a && gt s";
       gts = "gt sync --no-restack";
       yt-mp3 = "yt-dlp -x --audio-format mp3";
+      p = "pnpm";
     };
 
     initContent = ''
