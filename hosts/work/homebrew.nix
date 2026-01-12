@@ -34,6 +34,11 @@
       "zeromq"
       "qt"
       "boost"
+      "max-sixty/worktrunk/wt"
+    ];
+
+    taps = [
+      "max-sixty/worktrunk"
     ];
 
     masApps = {
