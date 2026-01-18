@@ -36,7 +36,6 @@
       less
       gh
       yt-dlp
-      bun
       git
       ffmpeg
       jq
