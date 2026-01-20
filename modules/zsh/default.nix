@@ -62,6 +62,7 @@
       gts = "gt sync --no-restack";
       yt-mp3 = "yt-dlp -x --audio-format mp3";
       p = "pnpm";
+      oc = "opencode";
     };
 
     initContent = ''
