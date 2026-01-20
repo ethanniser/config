@@ -63,6 +63,7 @@
       yt-mp3 = "yt-dlp -x --audio-format mp3";
       p = "pnpm";
       oc = "opencode";
+      hades = "~/.hades/bin/hades";
     };
 
     initContent = ''
