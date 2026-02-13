@@ -39,7 +39,7 @@
       git
       ffmpeg
       jq
-      nodejs_22
+      nodejs_24
       mas
       fastfetch
       cowsay
