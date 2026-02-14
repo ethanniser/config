@@ -12,6 +12,7 @@
   system.stateVersion = 4;
   nix.settings.experimental-features = "nix-command flakes";
   nix.enable = true;
+  system.primaryUser = "ethan";
   users.users.ethan = {
     home = "/Users/ethan";
     shell = pkgs.zsh;

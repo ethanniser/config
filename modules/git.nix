@@ -1,23 +1,24 @@
 _: {
+  programs.delta = {
+    enable = true;
+    enableGitIntegration = true;
+    options = {
+      syntax-theme = "TwoDark";
+      side-by-side = true;
+    };
+  };
+
   programs.git = {
     enable = true;
-    userName = "Ethan Niser";
-    userEmail = "ethan@niser.com";
-
-    delta = {
-      enable = true;
-      options = {
-        syntax-theme = "TwoDark";
-        side-by-side = true;
-      };
-    };
 
     lfs.enable = true;
 
     ignores = ["**/.DS_STORE"];
 
-    extraConfig = {
+    settings = {
       user = {
+        name = "Ethan Niser";
+        email = "ethan@niser.com";
         signingkey = "AE29E3B18C7136AC";
       };
       column = {

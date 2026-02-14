@@ -1,4 +1,4 @@
-{...}: {
+{config, ...}: {
   home.file.".config/starship.toml".text = builtins.readFile ./starship.toml;
   # prompt is basically the shell...
   programs.starship = {
@@ -8,7 +8,7 @@
   programs.zsh = {
     enable = true;
 
-    dotDir = ".config/zsh"; # Already prepends $HOME
+    dotDir = "${config.home.homeDirectory}/.config/zsh";
 
     oh-my-zsh = {
       enable = true;
