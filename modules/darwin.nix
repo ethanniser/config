@@ -10,8 +10,20 @@
   nixpkgs.config.allowUnfree = true;
   # backwards compat; don't change
   system.stateVersion = 4;
-  nix.settings.experimental-features = "nix-command flakes";
+  nix.settings = {
+    experimental-features = "nix-command flakes";
+    warn-dirty = false;
+  };
   nix.enable = true;
+  nix.gc = {
+    automatic = true;
+    interval = {
+      Weekday = 0;
+      Hour = 3;
+      Minute = 0;
+    };
+    options = "--delete-older-than 30d";
+  };
   system.primaryUser = "ethan";
   users.users.ethan = {
     home = "/Users/ethan";
@@ -69,8 +81,8 @@
         ShowStatusBar = true;
       };
       NSGlobalDomain = {
-        AppleShowAllFiles = false;
-        AppleShowAllExtensions = false;
+        AppleShowAllFiles = true;
+        AppleShowAllExtensions = true;
         AppleShowScrollBars = "Always";
         InitialKeyRepeat = 14;
         KeyRepeat = 3;

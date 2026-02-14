@@ -2,7 +2,7 @@
   imports = [
     ./git.nix
     ./zsh
-    ./tmux.nix
+
     ./karabiner
     ./ghostty.nix
     ./mpv
@@ -34,9 +34,8 @@
       fd
       curl
       less
-      gh
+
       yt-dlp
-      git
       ffmpeg
       jq
       nodejs_24
@@ -44,11 +43,10 @@
       fastfetch
       cowsay
       zsh-powerlevel10k
-      zoxide
+
       btop
-      lazygit
+
       stylua
-      prettierd
       nodePackages.prettier
       wget
       just
@@ -84,13 +82,12 @@
 
       # a bit of fun :)
       cmatrix
-      cowsay
       lolcat
       cbonsai
       deno
       redis
       radare2
-      direnv
+
       mergiraf
       go
       difftastic
@@ -109,6 +106,25 @@
       enable = true;
     };
     fzf = {
+      enable = true;
+    };
+    direnv = {
+      enable = true;
+      enableZshIntegration = true;
+      nix-direnv.enable = true;
+    };
+    zoxide = {
+      enable = true;
+      enableZshIntegration = true;
+    };
+    gh = {
+      enable = true;
+      settings = {
+        git_protocol = "ssh";
+        prompt = "enabled";
+      };
+    };
+    lazygit = {
       enable = true;
     };
   };

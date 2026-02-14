@@ -13,11 +13,12 @@
     darwin.url = "github:lnl7/nix-darwin";
     darwin.inputs.nixpkgs.follows = "nixpkgs";
 
-    get-flake.url = "github:ursi/get-flake";
+    # Include git submodules (for nvim)
+    self.submodules = true;
 
-    # Neovim flake
+    # Neovim flake (local submodule)
     nvim = {
-      url = "github:ethanniser/nvim.nix";
+      url = "path:./nvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };

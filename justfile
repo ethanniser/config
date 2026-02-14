@@ -22,12 +22,10 @@ switch-quiet host:
     #!/usr/bin/env bash
     set -euo pipefail
 
-    nix flake update nvim
     sudo darwin-rebuild switch --flake .#{{ host }} &>nix-switch.log || (
         cat nix-switch.log | grep --color error && false)
 
 switch-loud host:
-    nix flake update nvim
     sudo darwin-rebuild switch --flake .#{{ host }}
 
 commit:

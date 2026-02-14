@@ -31,7 +31,7 @@
         "sudo"
         "tmux"
       ];
-      theme = "robbyrussell";
+      theme = "";
     };
 
     enableCompletion = true;
