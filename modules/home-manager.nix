@@ -2,10 +2,8 @@
   imports = [
     ./git.nix
     ./zsh
-
     ./karabiner
     ./ghostty.nix
-    ./mpv
   ];
 
   home = {
