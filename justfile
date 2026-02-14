@@ -23,19 +23,19 @@ switch-quiet host:
     set -euo pipefail
 
     nix flake update nvim
-    darwin-rebuild switch --flake .#{{ host }} &>nix-switch.log || (
+    sudo darwin-rebuild switch --flake .#{{ host }} &>nix-switch.log || (
         cat nix-switch.log | grep --color error && false)
 
 switch-loud host:
     nix flake update nvim
-    darwin-rebuild switch --flake .#{{ host }}
+    sudo darwin-rebuild switch --flake .#{{ host }}
 
 commit:
     #!/usr/bin/env bash
     set -euo pipefail
 
     if ! git diff --quiet || ! git diff --quiet --cached; then
-        gen=$(darwin-rebuild --list-generations | grep current)
+        gen=$(sudo darwin-rebuild --list-generations | grep current)
         git commit -am "$gen"
         git push --quiet
     else
