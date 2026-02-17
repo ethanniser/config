@@ -13,7 +13,9 @@
 
     casks = [];
     # CHECK NIX FIRST!
-    brews = [];
+    brews = [
+      "claude-code"
+    ];
     taps = [];
   };
 }

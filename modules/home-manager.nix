@@ -89,7 +89,6 @@
       mergiraf
       go
       difftastic
-      claude-code
     ];
   };
 
