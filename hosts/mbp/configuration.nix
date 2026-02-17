@@ -24,9 +24,9 @@
   };
 
   home-manager = {
+    backupFileExtension = "backup";
     useGlobalPkgs = true;
     useUserPackages = true;
-    backupFileExtension = "backup";
     users.ethan.imports = [../../modules/home-manager.nix];
     extraSpecialArgs = {
       inherit inputs self;
