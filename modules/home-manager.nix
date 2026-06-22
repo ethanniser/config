@@ -18,6 +18,7 @@
     };
     sessionPath = [
       "\${HOME}/.luarocks/bin"
+      "\${HOME}/.grok/bin"
     ];
 
     packages = with pkgs; [
