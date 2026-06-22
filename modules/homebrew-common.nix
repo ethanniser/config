@@ -11,9 +11,7 @@
     caskArgs.no_quarantine = true;
     global.brewfile = true;
 
-    casks = [
-      "claude-code"
-    ];
+    casks = [];
     # CHECK NIX FIRST!
     brews = [];
     taps = [];
