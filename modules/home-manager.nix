@@ -17,6 +17,7 @@
       NPM_CONFIG_PREFIX = "~/.npm-global";
     };
     sessionPath = [
+      "\${HOME}/.bun/bin"
       "\${HOME}/.luarocks/bin"
       "\${HOME}/.grok/bin"
     ];
